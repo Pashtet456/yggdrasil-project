@@ -1,0 +1,53 @@
+.app {
+    //font-family: $body-font-family;
+    //font-size: $font-size-root;
+    //line-height: $line-height-root;
+    box-sizing: border-box;
+    word-break: normal;
+    overflow: hidden;
+
+    *,
+    ::before,
+    ::after {
+        background-repeat: no-repeat;
+        box-sizing: inherit;
+    }
+
+    ::before,
+    ::after {
+        text-decoration: inherit;
+        vertical-align: inherit;
+    }
+}
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+@include project('v-application') using($project) {
+
+    & .v-main .container{
+        max-width: map-deep-get($project, 'main', 'max-width') !important;
+        margin: auto;
+        text-align: center;
+    }
+
+    & .v-form {
+        max-width: 800px;
+        margin:  50px auto 0 auto;
+    }
+
+    & .v-input input {
+        color: map-deep-get($project, 'forms', 'color') !important;
+    }
+
+    & .error--text {
+        color: map-deep-get($project, 'texts', 'error--text') !important;
+    }
+
+    & .primary--text {
+        color: map-deep-get($project, 'texts', 'primary--text') !important;
+    }
+}
