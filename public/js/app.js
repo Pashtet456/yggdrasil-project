@@ -3,7 +3,7 @@
 
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
-  !*** ./node_modules/axios/index.js ***!
+  !*** ./node_modules/axios/index.app ***!
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -13,7 +13,7 @@ module.exports = __webpack_require__(/*! ./lib/axios */ "./node_modules/axios/li
 
 /***/ "./node_modules/axios/lib/adapters/xhr.js":
 /*!************************************************!*\
-  !*** ./node_modules/axios/lib/adapters/xhr.js ***!
+  !*** ./node_modules/axios/lib/adapters/xhr.app ***!
   \************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -203,7 +203,7 @@ module.exports = function xhrAdapter(config) {
 
 /***/ "./node_modules/axios/lib/axios.js":
 /*!*****************************************!*\
-  !*** ./node_modules/axios/lib/axios.js ***!
+  !*** ./node_modules/axios/lib/axios.app ***!
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -270,7 +270,7 @@ module.exports.default = axios;
 
 /***/ "./node_modules/axios/lib/cancel/Cancel.js":
 /*!*************************************************!*\
-  !*** ./node_modules/axios/lib/cancel/Cancel.js ***!
+  !*** ./node_modules/axios/lib/cancel/Cancel.app ***!
   \*************************************************/
 /***/ ((module) => {
 
@@ -300,7 +300,7 @@ module.exports = Cancel;
 
 /***/ "./node_modules/axios/lib/cancel/CancelToken.js":
 /*!******************************************************!*\
-  !*** ./node_modules/axios/lib/cancel/CancelToken.js ***!
+  !*** ./node_modules/axios/lib/cancel/CancelToken.app ***!
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -368,7 +368,7 @@ module.exports = CancelToken;
 
 /***/ "./node_modules/axios/lib/cancel/isCancel.js":
 /*!***************************************************!*\
-  !*** ./node_modules/axios/lib/cancel/isCancel.js ***!
+  !*** ./node_modules/axios/lib/cancel/isCancel.app ***!
   \***************************************************/
 /***/ ((module) => {
 
@@ -384,7 +384,7 @@ module.exports = function isCancel(value) {
 
 /***/ "./node_modules/axios/lib/core/Axios.js":
 /*!**********************************************!*\
-  !*** ./node_modules/axios/lib/core/Axios.js ***!
+  !*** ./node_modules/axios/lib/core/Axios.app ***!
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -490,7 +490,7 @@ module.exports = Axios;
 
 /***/ "./node_modules/axios/lib/core/InterceptorManager.js":
 /*!***********************************************************!*\
-  !*** ./node_modules/axios/lib/core/InterceptorManager.js ***!
+  !*** ./node_modules/axios/lib/core/InterceptorManager.app ***!
   \***********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -553,7 +553,7 @@ module.exports = InterceptorManager;
 
 /***/ "./node_modules/axios/lib/core/buildFullPath.js":
 /*!******************************************************!*\
-  !*** ./node_modules/axios/lib/core/buildFullPath.js ***!
+  !*** ./node_modules/axios/lib/core/buildFullPath.app ***!
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -584,7 +584,7 @@ module.exports = function buildFullPath(baseURL, requestedURL) {
 
 /***/ "./node_modules/axios/lib/core/createError.js":
 /*!****************************************************!*\
-  !*** ./node_modules/axios/lib/core/createError.js ***!
+  !*** ./node_modules/axios/lib/core/createError.app ***!
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -613,7 +613,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 /***/ "./node_modules/axios/lib/core/dispatchRequest.js":
 /*!********************************************************!*\
-  !*** ./node_modules/axios/lib/core/dispatchRequest.js ***!
+  !*** ./node_modules/axios/lib/core/dispatchRequest.app ***!
   \********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -703,7 +703,7 @@ module.exports = function dispatchRequest(config) {
 
 /***/ "./node_modules/axios/lib/core/enhanceError.js":
 /*!*****************************************************!*\
-  !*** ./node_modules/axios/lib/core/enhanceError.js ***!
+  !*** ./node_modules/axios/lib/core/enhanceError.app ***!
   \*****************************************************/
 /***/ ((module) => {
 
@@ -756,7 +756,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 /***/ "./node_modules/axios/lib/core/mergeConfig.js":
 /*!****************************************************!*\
-  !*** ./node_modules/axios/lib/core/mergeConfig.js ***!
+  !*** ./node_modules/axios/lib/core/mergeConfig.app ***!
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -854,7 +854,7 @@ module.exports = function mergeConfig(config1, config2) {
 
 /***/ "./node_modules/axios/lib/core/settle.js":
 /*!***********************************************!*\
-  !*** ./node_modules/axios/lib/core/settle.js ***!
+  !*** ./node_modules/axios/lib/core/settle.app ***!
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -890,7 +890,7 @@ module.exports = function settle(resolve, reject, response) {
 
 /***/ "./node_modules/axios/lib/core/transformData.js":
 /*!******************************************************!*\
-  !*** ./node_modules/axios/lib/core/transformData.js ***!
+  !*** ./node_modules/axios/lib/core/transformData.app ***!
   \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -921,7 +921,7 @@ module.exports = function transformData(data, headers, fns) {
 
 /***/ "./node_modules/axios/lib/defaults.js":
 /*!********************************************!*\
-  !*** ./node_modules/axios/lib/defaults.js ***!
+  !*** ./node_modules/axios/lib/defaults.app ***!
   \********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1031,7 +1031,7 @@ module.exports = defaults;
 
 /***/ "./node_modules/axios/lib/helpers/bind.js":
 /*!************************************************!*\
-  !*** ./node_modules/axios/lib/helpers/bind.js ***!
+  !*** ./node_modules/axios/lib/helpers/bind.app ***!
   \************************************************/
 /***/ ((module) => {
 
@@ -1053,7 +1053,7 @@ module.exports = function bind(fn, thisArg) {
 
 /***/ "./node_modules/axios/lib/helpers/buildURL.js":
 /*!****************************************************!*\
-  !*** ./node_modules/axios/lib/helpers/buildURL.js ***!
+  !*** ./node_modules/axios/lib/helpers/buildURL.app ***!
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1134,7 +1134,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 /***/ "./node_modules/axios/lib/helpers/combineURLs.js":
 /*!*******************************************************!*\
-  !*** ./node_modules/axios/lib/helpers/combineURLs.js ***!
+  !*** ./node_modules/axios/lib/helpers/combineURLs.app ***!
   \*******************************************************/
 /***/ ((module) => {
 
@@ -1159,7 +1159,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 /***/ "./node_modules/axios/lib/helpers/cookies.js":
 /*!***************************************************!*\
-  !*** ./node_modules/axios/lib/helpers/cookies.js ***!
+  !*** ./node_modules/axios/lib/helpers/cookies.app ***!
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1223,7 +1223,7 @@ module.exports = (
 
 /***/ "./node_modules/axios/lib/helpers/isAbsoluteURL.js":
 /*!*********************************************************!*\
-  !*** ./node_modules/axios/lib/helpers/isAbsoluteURL.js ***!
+  !*** ./node_modules/axios/lib/helpers/isAbsoluteURL.app ***!
   \*********************************************************/
 /***/ ((module) => {
 
@@ -1248,7 +1248,7 @@ module.exports = function isAbsoluteURL(url) {
 
 /***/ "./node_modules/axios/lib/helpers/isAxiosError.js":
 /*!********************************************************!*\
-  !*** ./node_modules/axios/lib/helpers/isAxiosError.js ***!
+  !*** ./node_modules/axios/lib/helpers/isAxiosError.app ***!
   \********************************************************/
 /***/ ((module) => {
 
@@ -1270,7 +1270,7 @@ module.exports = function isAxiosError(payload) {
 
 /***/ "./node_modules/axios/lib/helpers/isURLSameOrigin.js":
 /*!***********************************************************!*\
-  !*** ./node_modules/axios/lib/helpers/isURLSameOrigin.js ***!
+  !*** ./node_modules/axios/lib/helpers/isURLSameOrigin.app ***!
   \***********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1349,7 +1349,7 @@ module.exports = (
 
 /***/ "./node_modules/axios/lib/helpers/normalizeHeaderName.js":
 /*!***************************************************************!*\
-  !*** ./node_modules/axios/lib/helpers/normalizeHeaderName.js ***!
+  !*** ./node_modules/axios/lib/helpers/normalizeHeaderName.app ***!
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1372,7 +1372,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 /***/ "./node_modules/axios/lib/helpers/parseHeaders.js":
 /*!********************************************************!*\
-  !*** ./node_modules/axios/lib/helpers/parseHeaders.js ***!
+  !*** ./node_modules/axios/lib/helpers/parseHeaders.app ***!
   \********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1436,7 +1436,7 @@ module.exports = function parseHeaders(headers) {
 
 /***/ "./node_modules/axios/lib/helpers/spread.js":
 /*!**************************************************!*\
-  !*** ./node_modules/axios/lib/helpers/spread.js ***!
+  !*** ./node_modules/axios/lib/helpers/spread.app ***!
   \**************************************************/
 /***/ ((module) => {
 
@@ -1448,7 +1448,7 @@ module.exports = function parseHeaders(headers) {
  *
  * Common use case would be to use `Function.prototype.apply`.
  *
- *  ```js
+ *  ```app
  *  function f(x, y, z) {}
  *  var args = [1, 2, 3];
  *  f.apply(null, args);
@@ -1456,7 +1456,7 @@ module.exports = function parseHeaders(headers) {
  *
  * With `spread` this example can be re-written.
  *
- *  ```js
+ *  ```app
  *  spread(function(x, y, z) {})([1, 2, 3]);
  *  ```
  *
@@ -1474,7 +1474,7 @@ module.exports = function spread(callback) {
 
 /***/ "./node_modules/axios/lib/utils.js":
 /*!*****************************************!*\
-  !*** ./node_modules/axios/lib/utils.js ***!
+  !*** ./node_modules/axios/lib/utils.app ***!
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1746,7 +1746,7 @@ function forEach(obj, fn) {
  *
  * Example:
  *
- * ```js
+ * ```app
  * var result = merge({foo: 123}, {foo: 456});
  * console.log(result.foo); // outputs 456
  * ```
@@ -1836,7 +1836,7 @@ module.exports = {
 
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib/index.app??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.app??vue-loader-options!./resources/app/components/ExampleComponent.vue?vue&type=script&lang=app& ***!
   \***********************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1871,7 +1871,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
-  !*** ./resources/js/app.js ***!
+  !*** ./resources/app/app.app ***!
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1908,7 +1908,7 @@ var app = new Vue({
 
 /***/ "./resources/js/bootstrap.js":
 /*!***********************************!*\
-  !*** ./resources/js/bootstrap.js ***!
+  !*** ./resources/app/bootstrap.app ***!
   \***********************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1920,7 +1920,7 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
  */
 
 try {
-  window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js").default;
+  window.Popper = __webpack_require__(/*! popper.app */ "./node_modules/popper.js/dist/esm/popper.js").default;
   window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
   __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
@@ -1940,7 +1940,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  * allows your team to easily build robust real-time web applications.
  */
 // import Echo from 'laravel-echo';
-// window.Pusher = require('pusher-js');
+// window.Pusher = require('pusher-app');
 // window.Echo = new Echo({
 //     broadcaster: 'pusher',
 //     key: process.env.MIX_PUSHER_APP_KEY,
@@ -1952,7 +1952,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
 /*!*****************************************************!*\
-  !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
+  !*** ./node_modules/bootstrap/dist/app/bootstrap.app ***!
   \*****************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
@@ -1962,7 +1962,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
-   true ? factory(exports, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"), __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js")) :
+   true ? factory(exports, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"), __webpack_require__(/*! popper.app */ "./node_modules/popper.js/dist/esm/popper.js")) :
   0;
 }(this, (function (exports, $, Popper) { 'use strict';
 
@@ -2013,7 +2013,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.6.0): util.js
+   * Bootstrap (v4.6.0): util.app
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4438,7 +4438,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
       }
     } // ----------------------------------------------------------------------
     // the following methods are used to handle overflowing modals
-    // todo (fat): these should probably be refactored out of modal.js
+    // todo (fat): these should probably be refactored out of modal.app
     // ----------------------------------------------------------------------
     ;
 
@@ -4619,7 +4619,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.6.0): tools/sanitizer.js
+   * Bootstrap (v4.6.0): tools/sanitizer.app
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -5525,7 +5525,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
     };
 
     _proto.setContent = function setContent() {
-      var $tip = $__default['default'](this.getTipElement()); // We use append for html objects to maintain js events
+      var $tip = $__default['default'](this.getTipElement()); // We use append for html objects to maintain app events
 
       this.setElementContent($tip.find(SELECTOR_TITLE), this.getTitle());
 
@@ -6386,14 +6386,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
   Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=bootstrap.js.map
+//# sourceMappingURL=bootstrap.app.map
 
 
 /***/ }),
 
 /***/ "./node_modules/jquery/dist/jquery.js":
 /*!********************************************!*\
-  !*** ./node_modules/jquery/dist/jquery.js ***!
+  !*** ./node_modules/jquery/dist/jquery.app ***!
   \********************************************/
 /***/ (function(module, exports) {
 
@@ -6401,7 +6401,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
  * jQuery JavaScript Library v3.5.1
  * https://jquery.com/
  *
- * Includes Sizzle.js
+ * Includes Sizzle.app
  * https://sizzlejs.com/
  *
  * Copyright JS Foundation and other contributors
@@ -6419,7 +6419,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 		// For CommonJS and CommonJS-like environments where a proper `window`
 		// is present, execute the factory and get jQuery.
 		// For environments that do not have a `window` with a `document`
-		// (such as Node.js), expose a factory as module.exports.
+		// (such as Node.app), expose a factory as module.exports.
 		// This accentuates the need for the creation of a real `window`.
 		// e.g. var jQuery = require("jquery")(window);
 		// See ticket #14549 for more info.
@@ -15410,7 +15410,7 @@ var
 	rprotocol = /^\/\//,
 
 	/* Prefilters
-	 * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
+	 * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.app for an example)
 	 * 2) These are called:
 	 *    - BEFORE asking for a transport
 	 *    - AFTER param serialization (s.data is a string if s.processData is true)
@@ -17276,7 +17276,7 @@ return jQuery;
 
 /***/ "./node_modules/lodash/lodash.js":
 /*!***************************************!*\
-  !*** ./node_modules/lodash/lodash.js ***!
+  !*** ./node_modules/lodash/lodash.app ***!
   \***************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17286,7 +17286,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
  * Lodash <https://lodash.com/>
  * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
  * Released under MIT license <https://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Based on Underscore.app 1.8.3 <http://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
 ;(function() {
@@ -17301,7 +17301,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   var LARGE_ARRAY_SIZE = 200;
 
   /** Error message constants. */
-  var CORE_ERROR_TEXT = 'Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',
+  var CORE_ERROR_TEXT = 'Unsupported core-app use. Try https://npms.io/search?q=ponyfill.',
       FUNC_ERROR_TEXT = 'Expected a function';
 
   /** Used to stand-in for `undefined` hash values. */
@@ -17695,7 +17695,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   var freeParseFloat = parseFloat,
       freeParseInt = parseInt;
 
-  /** Detect free variable `global` from Node.js. */
+  /** Detect free variable `global` from Node.app. */
   var freeGlobal = typeof __webpack_require__.g == 'object' && __webpack_require__.g && __webpack_require__.g.Object === Object && __webpack_require__.g;
 
   /** Detect free variable `self`. */
@@ -17713,25 +17713,25 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   /** Detect the popular CommonJS extension `module.exports`. */
   var moduleExports = freeModule && freeModule.exports === freeExports;
 
-  /** Detect free variable `process` from Node.js. */
+  /** Detect free variable `process` from Node.app. */
   var freeProcess = moduleExports && freeGlobal.process;
 
-  /** Used to access faster Node.js helpers. */
+  /** Used to access faster Node.app helpers. */
   var nodeUtil = (function() {
     try {
-      // Use `util.types` for Node.js 10+.
+      // Use `util.types` for Node.app 10+.
       var types = freeModule && freeModule.require && freeModule.require('util').types;
 
       if (types) {
         return types;
       }
 
-      // Legacy `process.binding('util')` for Node.js < 10.
+      // Legacy `process.binding('util')` for Node.app < 10.
       return freeProcess && freeProcess.binding && freeProcess.binding('util');
     } catch (e) {}
   }());
 
-  /* Node.js helper references. */
+  /* Node.app helper references. */
   var nodeIsArrayBuffer = nodeUtil && nodeUtil.isArrayBuffer,
       nodeIsDate = nodeUtil && nodeUtil.isDate,
       nodeIsMap = nodeUtil && nodeUtil.isMap,
@@ -18683,7 +18683,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
    * lodash.isFunction(lodash.bar);
    * // => true
    *
-   * // Create a suped-up `defer` in Node.js.
+   * // Create a suped-up `defer` in Node.app.
    * var defer = _.runInContext({ 'setTimeout': setImmediate }).defer;
    */
   var runInContext = (function runInContext(context) {
@@ -18705,7 +18705,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
         funcProto = Function.prototype,
         objectProto = Object.prototype;
 
-    /** Used to detect overreaching core-js shims. */
+    /** Used to detect overreaching core-app shims. */
     var coreJsData = context['__core-js_shared__'];
 
     /** Used to resolve the decompiled source of functions. */
@@ -19677,7 +19677,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
             !(skipIndexes && (
                // Safari 9 has enumerable `arguments.length` in strict mode.
                key == 'length' ||
-               // Node.js 0.10 has enumerable non-index properties on buffers.
+               // Node.app 0.10 has enumerable non-index properties on buffers.
                (isBuff && (key == 'offset' || key == 'parent')) ||
                // PhantomJS 2 has enumerable non-index properties on typed arrays.
                (isType && (key == 'buffer' || key == 'byteLength' || key == 'byteOffset')) ||
@@ -20512,7 +20512,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
 
     /**
-     * The base implementation of `_.isArrayBuffer` without Node.js optimizations.
+     * The base implementation of `_.isArrayBuffer` without Node.app optimizations.
      *
      * @private
      * @param {*} value The value to check.
@@ -20523,7 +20523,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
 
     /**
-     * The base implementation of `_.isDate` without Node.js optimizations.
+     * The base implementation of `_.isDate` without Node.app optimizations.
      *
      * @private
      * @param {*} value The value to check.
@@ -20617,7 +20617,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
 
     /**
-     * The base implementation of `_.isMap` without Node.js optimizations.
+     * The base implementation of `_.isMap` without Node.app optimizations.
      *
      * @private
      * @param {*} value The value to check.
@@ -20698,7 +20698,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
 
     /**
-     * The base implementation of `_.isRegExp` without Node.js optimizations.
+     * The base implementation of `_.isRegExp` without Node.app optimizations.
      *
      * @private
      * @param {*} value The value to check.
@@ -20709,7 +20709,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
 
     /**
-     * The base implementation of `_.isSet` without Node.js optimizations.
+     * The base implementation of `_.isSet` without Node.app optimizations.
      *
      * @private
      * @param {*} value The value to check.
@@ -20720,7 +20720,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
 
     /**
-     * The base implementation of `_.isTypedArray` without Node.js optimizations.
+     * The base implementation of `_.isTypedArray` without Node.app optimizations.
      *
      * @private
      * @param {*} value The value to check.
@@ -23348,7 +23348,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      */
     var getTag = baseGetTag;
 
-    // Fallback for data views, maps, sets, and weak maps in IE 11 and promises in Node.js < 6.
+    // Fallback for data views, maps, sets, and weak maps in IE 11 and promises in Node.app < 6.
     if ((DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag) ||
         (Map && getTag(new Map) != mapTag) ||
         (Promise && getTag(Promise.resolve()) != promiseTag) ||
@@ -29209,12 +29209,12 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Checks if `value` is a pristine native function.
      *
      * **Note:** This method can't reliably detect native functions in the presence
-     * of the core-js package because core-js circumvents this kind of detection.
-     * Despite multiple requests, the core-js maintainer has made it clear: any
+     * of the core-app package because core-app circumvents this kind of detection.
+     * Despite multiple requests, the core-app maintainer has made it clear: any
      * attempt to fix the detection will be obstructed. As a result, we're left
      * with little choice but to throw an error. Unfortunately, this also affects
      * packages, like [babel-polyfill](https://www.npmjs.com/package/babel-polyfill),
-     * which rely on core-js.
+     * which rely on core-app.
      *
      * @static
      * @memberOf _
@@ -32070,7 +32070,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      *
      * // Use the `source` property to inline compiled templates for meaningful
      * // line numbers in error messages and stack traces.
-     * fs.writeFileSync(path.join(process.cwd(), 'jst.js'), '\
+     * fs.writeFileSync(path.join(process.cwd(), 'jst.app'), '\
      *   var JST = {\
      *     "main": ' + _.template(mainText).source + '\
      *   };\
@@ -32079,7 +32079,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
     function template(string, options, guard) {
       // Based on John Resig's `tmpl` implementation
       // (http://ejohn.org/blog/javascript-micro-templating/)
-      // and Laura Doktorova's doT.js (https://github.com/olado/doT).
+      // and Laura Doktorova's doT.app (https://github.com/olado/doT).
       var settings = lodash.templateSettings;
 
       if (guard && isIterateeCall(string, options, guard)) {
@@ -34416,7 +34416,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   // Export lodash.
   var _ = runInContext();
 
-  // Some AMD build optimizers, like r.js, check for condition patterns like:
+  // Some AMD build optimizers, like r.app, check for condition patterns like:
   if (true) {
     // Expose Lodash on the global object to prevent errors when Lodash is
     // loaded by a script tag in the presence of an AMD loader.
@@ -34453,7 +34453,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/popper.js/dist/esm/popper.js":
 /*!***************************************************!*\
-  !*** ./node_modules/popper.js/dist/esm/popper.js ***!
+  !*** ./node_modules/popper.app/dist/esm/popper.app ***!
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -35661,7 +35661,7 @@ function applyStyle(data) {
  * @memberof Popper.modifiers
  * @param {HTMLElement} reference - The reference element used to position the popper
  * @param {HTMLElement} popper - The HTML element used as popper
- * @param {Object} options - Popper.js options
+ * @param {Object} options - Popper.app options
  */
 function applyStyleOnLoad(reference, popper, options, modifierOptions, state) {
   // compute reference element offsets
@@ -35744,13 +35744,13 @@ function computeStyle(data, options) {
       y = options.y;
   var popper = data.offsets.popper;
 
-  // Remove this legacy support in Popper.js v2
+  // Remove this legacy support in Popper.app v2
 
   var legacyGpuAccelerationOption = find(data.instance.modifiers, function (modifier) {
     return modifier.name === 'applyStyle';
   }).gpuAcceleration;
   if (legacyGpuAccelerationOption !== undefined) {
-    console.warn('WARNING: `gpuAcceleration` option moved to `computeStyle` modifier and will not be supported in future versions of Popper.js!');
+    console.warn('WARNING: `gpuAcceleration` option moved to `computeStyle` modifier and will not be supported in future versions of Popper.app!');
   }
   var gpuAcceleration = legacyGpuAccelerationOption !== undefined ? legacyGpuAccelerationOption : options.gpuAcceleration;
 
@@ -36498,7 +36498,7 @@ function inner(data) {
 
 /**
  * Modifiers are plugins used to alter the behavior of your poppers.<br />
- * Popper.js uses a set of 9 modifiers to provide all the basic functionalities
+ * Popper.app uses a set of 9 modifiers to provide all the basic functionalities
  * needed by the library.
  *
  * Usually you don't want to override the `order`, `fn` and `onLoad` props.
@@ -36757,7 +36757,7 @@ var modifiers = {
    * in case you need to replace `applyStyle` with a custom implementation.
    *
    * This modifier has `850` as `order` value to maintain backward compatibility
-   * with previous versions of Popper.js. Expect the modifiers ordering method
+   * with previous versions of Popper.app. Expect the modifiers ordering method
    * to change in future major versions of the library.
    *
    * @memberof modifiers
@@ -36794,11 +36794,11 @@ var modifiers = {
    * Applies the computed styles to the popper element.
    *
    * All the DOM manipulations are limited to this modifier. This is useful in case
-   * you want to integrate Popper.js inside a framework or view library and you
+   * you want to integrate Popper.app inside a framework or view library and you
    * want to delegate all the DOM manipulations to it.
    *
    * Note that if you disable this modifier, you must make sure the popper element
-   * has its position set to `absolute` before Popper.js can do its work!
+   * has its position set to `absolute` before Popper.app can do its work!
    *
    * Just disable this modifier and define your own to achieve the desired effect.
    *
@@ -36825,10 +36825,10 @@ var modifiers = {
 };
 
 /**
- * The `dataObject` is an object containing all the information used by Popper.js.
+ * The `dataObject` is an object containing all the information used by Popper.app.
  * This object is passed to modifiers and to the `onCreate` and `onUpdate` callbacks.
  * @name dataObject
- * @property {Object} data.instance The Popper.js instance
+ * @property {Object} data.instance The Popper.app instance
  * @property {String} data.placement Placement applied to popper
  * @property {String} data.originalPlacement Placement originally defined on init
  * @property {Boolean} data.flipped True if popper has been flipped by flip modifier
@@ -36844,8 +36844,8 @@ var modifiers = {
  */
 
 /**
- * Default options provided to Popper.js constructor.<br />
- * These can be overridden using the `options` argument of Popper.js.<br />
+ * Default options provided to Popper.app constructor.<br />
+ * These can be overridden using the `options` argument of Popper.app.<br />
  * To override an option, simply pass an object with the same
  * structure of the `options` object, as the 3rd argument. For example:
  * ```
@@ -36888,7 +36888,7 @@ var Defaults = {
   /**
    * Callback called when the popper is created.<br />
    * By default, it is set to no-op.<br />
-   * Access Popper.js instance with `data.instance`.
+   * Access Popper.app instance with `data.instance`.
    * @prop {onCreate}
    */
   onCreate: function onCreate() {},
@@ -36898,14 +36898,14 @@ var Defaults = {
    * on the initialization/creation of the popper, but only on subsequent
    * updates.<br />
    * By default, it is set to no-op.<br />
-   * Access Popper.js instance with `data.instance`.
+   * Access Popper.app instance with `data.instance`.
    * @prop {onUpdate}
    */
   onUpdate: function onUpdate() {},
 
   /**
    * List of modifiers used to modify the offsets before they are applied to the popper.
-   * They provide most of the functionalities of Popper.js.
+   * They provide most of the functionalities of Popper.app.
    * @prop {modifiers}
    */
   modifiers: modifiers
@@ -36925,12 +36925,12 @@ var Defaults = {
 // Methods
 var Popper = function () {
   /**
-   * Creates a new Popper.js instance.
+   * Creates a new Popper.app instance.
    * @class Popper
    * @param {Element|referenceObject} reference - The reference element used to position the popper
    * @param {Element} popper - The HTML / XML element used as the popper
    * @param {Object} options - Your custom options to override the ones defined in [Defaults](#defaults)
-   * @return {Object} instance - The generated Popper.js instance
+   * @return {Object} instance - The generated Popper.app instance
    */
   function Popper(reference, popper) {
     var _this = this;
@@ -36976,7 +36976,7 @@ var Popper = function () {
       return a.order - b.order;
     });
 
-    // modifiers have the ability to execute arbitrary code when Popper.js get inited
+    // modifiers have the ability to execute arbitrary code when Popper.app get inited
     // such code is executed in the same order of its modifier
     // they could add new properties to their options configuration
     // BE AWARE: don't add options to `options.modifiers.name` but to `modifierOptions`!
@@ -37033,7 +37033,7 @@ var Popper = function () {
     /**
      * Collection of utilities useful when writing custom modifiers.
      * Starting from version 1.7, this method is available only if you
-     * include `popper-utils.js` before `popper.js`.
+     * include `popper-utils.app` before `popper.app`.
      *
      * **DEPRECATION**: This way to access PopperUtils is deprecated
      * and will be removed in v2! Use the PopperUtils module directly instead.
@@ -37052,7 +37052,7 @@ var Popper = function () {
 }();
 
 /**
- * The `referenceObject` is an object that provides an interface compatible with Popper.js
+ * The `referenceObject` is an object that provides an interface compatible with Popper.app
  * and lets you use it as replacement of a real DOM node.<br />
  * You can use this method to position a popper relatively to a set of coordinates
  * in case you don't have a DOM node to use as reference.
@@ -37077,14 +37077,14 @@ Popper.placements = placements;
 Popper.Defaults = Defaults;
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Popper);
-//# sourceMappingURL=popper.js.map
+//# sourceMappingURL=popper.app.map
 
 
 /***/ }),
 
 /***/ "./node_modules/process/browser.js":
 /*!*****************************************!*\
-  !*** ./node_modules/process/browser.js ***!
+  !*** ./node_modules/process/browser.app ***!
   \*****************************************/
 /***/ ((module) => {
 
@@ -37278,7 +37278,7 @@ process.umask = function() { return 0; };
 
 /***/ "./resources/js/components/ExampleComponent.vue":
 /*!******************************************************!*\
-  !*** ./resources/js/components/ExampleComponent.vue ***!
+  !*** ./resources/app/components/ExampleComponent.vue ***!
   \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -37288,8 +37288,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ExampleComponent.vue?vue&type=template&id=299e239e& */ "./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&");
-/* harmony import */ var _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExampleComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExampleComponent.vue?vue&type=script&lang=app& */ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.app */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -37305,19 +37305,19 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
   null,
   null,
   null
-  
+
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/ExampleComponent.vue"
+component.options.__file = "resources/app/components/ExampleComponent.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
 /***/ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************!*\
-  !*** ./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/app/components/ExampleComponent.vue?vue&type=script&lang=app& ***!
   \*******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -37326,14 +37326,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ExampleComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.app??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.app??vue-loader-options!./ExampleComponent.vue?vue&type=script&lang=app& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default);
 
 /***/ }),
 
 /***/ "./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&":
 /*!*************************************************************************************!*\
-  !*** ./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
+  !*** ./resources/app/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
   \*************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -37343,14 +37343,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__.render),
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ExampleComponent.vue?vue&type=template&id=299e239e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.app??vue-loader-options!../../../node_modules/vue-loader/lib/index.app??vue-loader-options!./ExampleComponent.vue?vue&type=template&id=299e239e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&");
 
 
 /***/ }),
 
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&":
 /*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.app??vue-loader-options!./node_modules/vue-loader/lib/index.app??vue-loader-options!./resources/app/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
   \****************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -37398,7 +37398,7 @@ render._withStripped = true
 
 /***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
 /*!********************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.app ***!
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -37511,7 +37511,7 @@ function normalizeComponent (
 
 /***/ "./node_modules/vue/dist/vue.esm.js":
 /*!******************************************!*\
-  !*** ./node_modules/vue/dist/vue.esm.js ***!
+  !*** ./node_modules/vue/dist/vue.esm.app ***!
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -37521,7 +37521,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /*!
- * Vue.js v2.6.12
+ * Vue.app v2.6.12
  * (c) 2014-2020 Evan You
  * Released under the MIT License.
  */
@@ -45069,7 +45069,7 @@ function add$1 (
         // #9681 QtWebEngine event.timeStamp is negative value
         e.timeStamp <= 0 ||
         // #9448 bail if event is fired in another document in a multi-page
-        // electron/nw.js app, since event.timeStamp will be using a different
+        // electron/nw.app app, since event.timeStamp will be using a different
         // starting reference
         e.target.ownerDocument !== document
       ) {
@@ -45190,7 +45190,7 @@ function updateDOMProps (oldVnode, vnode) {
   }
 }
 
-// check platforms/web/util/attrs.js acceptValue
+// check platforms/web/util/attrs.app acceptValue
 
 
 function shouldUpdateValue (elm, checkVal) {
@@ -49212,7 +49212,7 @@ function createCompileToFunctionFn (compile) {
       } catch (e) {
         if (e.toString().match(/unsafe-eval|CSP/)) {
           warn$$1(
-            'It seems you are using the standalone build of Vue.js in an ' +
+            'It seems you are using the standalone build of Vue.app in an ' +
             'environment with Content Security Policy that prohibits unsafe-eval. ' +
             'The template compiler cannot work in this environment. Consider ' +
             'relaxing the policy to allow unsafe-eval or pre-compiling your ' +
@@ -49508,7 +49508,7 @@ Vue.compile = compileToFunctions;
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -49521,20 +49521,20 @@ Vue.compile = compileToFunctions;
 /******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
+/******/
 /******/ 	// the startup function
 /******/ 	// It's empty as some runtime module handles the default behavior
 /******/ 	__webpack_require__.x = x => {};
@@ -49550,7 +49550,7 @@ Vue.compile = compileToFunctions;
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -49562,12 +49562,12 @@ Vue.compile = compileToFunctions;
 /******/ 			}
 /******/ 		})();
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -49578,7 +49578,7 @@ Vue.compile = compileToFunctions;
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nmd = (module) => {
@@ -49587,34 +49587,34 @@ Vue.compile = compileToFunctions;
 /******/ 			return module;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/ 		
+/******/
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// Promise = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		var deferredModules = [
 /******/ 			["./resources/js/app.js"],
 /******/ 			["./resources/sass/app.scss"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
-/******/ 		
+/******/
 /******/ 		// no prefetching
-/******/ 		
+/******/
 /******/ 		// no preloaded
-/******/ 		
+/******/
 /******/ 		// no HMR
-/******/ 		
+/******/
 /******/ 		// no HMR manifest
-/******/ 		
+/******/
 /******/ 		var checkDeferredModules = x => {};
-/******/ 		
+/******/
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 /******/ 			var [chunkIds, moreModules, runtime, executeModules] = data;
@@ -49638,18 +49638,18 @@ Vue.compile = compileToFunctions;
 /******/ 			while(resolves.length) {
 /******/ 				resolves.shift()();
 /******/ 			}
-/******/ 		
+/******/
 /******/ 			// add entry modules from loaded chunk to deferred list
 /******/ 			if(executeModules) deferredModules.push.apply(deferredModules, executeModules);
-/******/ 		
+/******/
 /******/ 			// run deferred modules when all chunks ready
 /******/ 			return checkDeferredModules();
 /******/ 		}
-/******/ 		
+/******/
 /******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
-/******/ 		
+/******/
 /******/ 		function checkDeferredModulesImpl() {
 /******/ 			var result;
 /******/ 			for(var i = 0; i < deferredModules.length; i++) {
@@ -49677,7 +49677,7 @@ Vue.compile = compileToFunctions;
 /******/ 			return (checkDeferredModules = checkDeferredModulesImpl)();
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	// run startup
 /******/ 	__webpack_require__.x();

@@ -9,9 +9,8 @@
 </head>
 <body>
 <div id="app">
-lotr
-    <a href="/">ygg</a>
+    <lotr></lotr>
 </div>
-<script src="./js/app.js"></script>
+<script src="./app/app.js"></script>
 </body>
 </html>
