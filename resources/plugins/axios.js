@@ -1,6 +1,6 @@
 import axios                                         from 'axios';
-import { RequestError, ApiResponseError, UserError } from '~/lib/classes/error';
-import store                                         from '~/store/index';
+import { RequestError, ApiResponseError, UserError } from '../lib/classes/error';
+import store                                         from '../store/index';
 
 const config = {
     baseURL: '',
@@ -66,4 +66,4 @@ instance.interceptors.response.use(
     },
 );
 
-export { instance as $axios };
+export default instance;

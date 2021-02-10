@@ -11,12 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.js('resources/app/app.js', 'public/app')
+    .vue()
+    .sass('resources/assets/scss/main.scss', 'public/css');
+
 mix.alias({
     '@': '/resources/sass',
     '~': '/resources/',
 });
-
-mix.js('resources/app/app.js', 'public/app')
-    .vue()
-    .sass('resources/sass/app.scss', 'public/css');
 

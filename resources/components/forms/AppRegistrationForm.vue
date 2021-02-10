@@ -4,7 +4,7 @@
               :values="values"
               submit-text="Зарегистрироваться">
         <template v-slot:header>
-            <div class="text-left mb-2 text-h5">Регистрация</div>
+            <div>Регистрация</div>
         </template>
 
         <template v-slot:fields="{ rules }">
@@ -48,7 +48,7 @@
 </template>
 
 <script>
-    import AppForm from '~/components/forms/AppForm';
+    import AppForm from '../forms/AppForm';
 
     export default {
         name: 'AppRegistrationForm',

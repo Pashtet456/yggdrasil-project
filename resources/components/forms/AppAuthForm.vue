@@ -5,7 +5,7 @@
               :values="values"
               submit-text="Войти">
         <template v-slot:header>
-            <div class="text-left mb-2">Вход</div>
+            <div>Вход</div>
         </template>
 
         <template v-slot:fields="{ rules }">
@@ -44,7 +44,7 @@
 </template>
 
 <script>
-    import AppForm from '~/components/forms/AppForm';
+    import AppForm from '../forms/AppForm';
 
     export default {
         name: 'AppAuthForm',

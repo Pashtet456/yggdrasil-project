@@ -1,4 +1,4 @@
-<template>
+<template app>
     <v-footer></v-footer>
 </template>
 

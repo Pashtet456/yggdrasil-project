@@ -1,65 +1,56 @@
 <template>
     <v-app-bar app>
-        <v-container class="pa-0 ma-0 d-flex align-center header">
+        <v-container class="pa-0 ma-0 d-flex align-center header" fluid>
+
             <!-- Логотип -->
-            <div class="header-logo__ygg d-flex align-center">
-                <v-img :src="myImage"></v-img>
-<!--                <v-img-->
-<!--                        alt="Vuetify Logo"-->
-<!--                        contain-->
-<!--                        :width="this.$vuetify.application.top - 5"-->
-<!--                        :src="'../../../resources/assets/img/logo.png'"/>-->
-                <router-link to="/">
-<!--                    <v-img  -->
-<!--                            alt="Vuetify Logo"-->
-<!--                            contain-->
-<!--                            :src="require('../../assets/img/logo.png')"-->
-<!--                    />-->
-<!--                            :src="require('../../assets/img/logo.png')"-->
-<!--                            :width="this.$vuetify.application.top - 5"/>-->
-                </router-link>
-                <span>Yggdrasil project</span>
-            </div>
+            <router-link to="/">
+                <div class="image-block image-block--logo"></div>
+            </router-link>
+
+            Yggdrasil project
+
             <v-spacer/>
+
             <!-- Меню -->
-            <div class="header-menu">
-                <ListItemsMenu :menu="menu"/>
-            </div>
+            <v-list class="d-flex pa-0 header__nav-menu">
+
+                <v-list-item v-for="item in menu" :key="item.link">
+                    <router-link :to="item.link">
+                        {{ item.text }}
+                    </router-link>
+                </v-list-item>
+
+                <v-list-item>
+                    <!--Авторизованный пользователь-->
+                    <template v-if="false">
+                        qew
+                    </template>
+
+                    <!--Не авторизованный пользователь-->
+                    <template v-else>
+                        <router-link to="/authorization">
+                            Войти
+                        </router-link>
+                    </template>
+                </v-list-item>
+            </v-list>
+
             <v-spacer/>
-<!--            &lt;!&ndash; Логотип &ndash;&gt;-->
-<!--            <div class="header-logo__vk">-->
-<!--                <router-link to="/">-->
-<!--                    <v-img-->
-<!--                            alt="Vuetify Logo"-->
-<!--                            contain-->
-<!--                            :src="require('../../assets/img/logo.png')"-->
-<!--                            :width="this.$vuetify.application.top - 5"/>-->
-<!--                </router-link>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Логотип &ndash;&gt;-->
-<!--            <div class="header-logo__dis">-->
-<!--                <router-link to="/">-->
-<!--                    <v-img-->
-<!--                            alt="Vuetify Logo"-->
-<!--                            contain-->
-<!--                            :src="require('../../assets/img/logo.png')"-->
-<!--                            :width="this.$vuetify.application.top - 5"/>-->
-<!--                </router-link>-->
-<!--            </div>-->
+            <router-link to="/">
+                <div class="image-block image-block--vk"></div>
+            </router-link>
+            <router-link to="/">
+                <div class="image-block image-block--dis"></div>
+            </router-link>
         </v-container>
     </v-app-bar>
 </template>
 
 <script>
-    import ListItemsMenu from '../../templates/menus/ListItemsMenu';
 
     export default {
         name: 'yggdrasil-header',
-        components: {
-            ListItemsMenu,
-        },
         data: () => ( {
-            myImage: require('../../assets/img/logo.png'),
             menu: [
                 {
                     text: 'Главная',
@@ -80,11 +71,23 @@
 </script>
 
 <style lang="scss" scoped>
-    .header {
-        max-width: 100%;
-        &-logo__ygg {
-            width: 118px;
-            white-space: nowrap;
+    .image-block {
+        height: 64px;
+        width: 64px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 64px 64px;
+
+        &--vk {
+            background-image: url('../../assets/img/vk.png');
+        }
+
+        &--logo {
+            background-image: url('../../assets/img/logo.png');
+        }
+
+        &--dis {
+            background-image: url('../../assets/img/dis.png');
         }
     }
 </style>

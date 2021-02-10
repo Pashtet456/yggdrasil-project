@@ -4,7 +4,7 @@
               :values="values"
               submit-text="Отправить письмо">
         <template v-slot:header>
-            <div class="text-left mb-2 text-h5">Восстановление пароля</div>
+            <div>Восстановление пароля</div>
         </template>
 
         <template v-slot:fields="{ rules }">
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-    import AppForm from '~/components/forms/AppForm';
+    import AppForm from '../forms/AppForm';
 
     export default {
         name: 'AppForgotPassportForm',

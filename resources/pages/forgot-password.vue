@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import AppForgotPassportForm from '~/components/forms/AppForgotPasswordForm';
+    import AppForgotPassportForm from '../components/forms/AppForgotPasswordForm';
     export default {
         name: 'RePass',
         components: { AppForgotPassportForm },

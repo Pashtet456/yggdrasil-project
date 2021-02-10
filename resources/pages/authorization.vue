@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import AppAuthForm from '~/components/forms/AppAuthForm';
+    import AppAuthForm from '../components/forms/AppAuthForm';
     export default {
         name: 'Auth',
         components: { AppAuthForm },

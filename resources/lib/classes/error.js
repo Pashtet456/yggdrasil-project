@@ -1,4 +1,4 @@
-import { USER_ERROR, SYSTEM_ERROR } from '~/lib/constants/error';
+import { USER_ERROR, SYSTEM_ERROR } from '../constants/error';
 
 /**
  * Базовый класс ошибки

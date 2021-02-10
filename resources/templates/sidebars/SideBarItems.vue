@@ -1,23 +1,24 @@
 <template>
-    <div class="sidebar">
+    <div>
         <template v-if="position==='left'">
             <app-sidebar-items
-                :items="items.slice(0,items.length/2)"
-                position="left"/>
+                    :items="items.slice(0,items.length/2)"
+                    position="left"/>
         </template>
         <template v-if="position==='right'">
             <app-sidebar-items
-                :items="items.slice(items.length/2,items.length)"
-                position="right"/>
+                    :items="items.slice(items.length/2,items.length)"
+                    position="right"/>
         </template>
     </div>
 </template>
 
 <script>
-    import AppSidebarItems from '~/components/sidebars/AppSideBarItems';
+    import AppSidebarItems from '../../components/sidebars/AppSideBarItems';
+
     export default {
         name: 'SidebarItems',
-        components: { AppSidebarItems},
+        components: { AppSidebarItems },
         props: {
             position: {
                 type: String,

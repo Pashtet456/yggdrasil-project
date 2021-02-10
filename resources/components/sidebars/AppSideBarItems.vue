@@ -7,12 +7,14 @@
             v-for="(item, i) in items"
             :key="item[i]"
             class="pa-0">
+
             <app-side-bar-item
                 :link="item.link"
                 :source="item.source"
                 class="side-bar-item"
                 :class="position==='left'?'side-bar-item--left'
                     :position==='right'?'side-bar-item--right':''"/>
+
             <app-side-bar-cloud
                 class="side-bar-cloud"
                 :minecraft-server-url="item.minecraftServerUrl"/>
@@ -21,8 +23,8 @@
 </template>
 
 <script>
-    import AppSideBarItem  from '~/components/sidebars/AppSideBarItem';
-    import AppSideBarCloud from '~/components/sidebars/AppSideBarCloud';
+    import AppSideBarItem  from './AppSideBarItem';
+    import AppSideBarCloud from './AppSideBarCloud';
     export default {
         name: 'AppSidebarItems',
         components: { AppSideBarCloud, AppSideBarItem },

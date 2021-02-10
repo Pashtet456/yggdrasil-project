@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import AppRegistrationForm from '~/components/forms/AppRegistrationForm';
+    import AppRegistrationForm from '../components/forms/AppRegistrationForm';
     export default {
         name: 'Registration',
         components: { AppRegistrationForm },

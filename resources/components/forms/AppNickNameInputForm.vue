@@ -4,7 +4,7 @@
               :values="values"
               submit-text="Сохранить">
         <template v-slot:header>
-            <div class="text-left mb-2 text-h5">Введите Никнейм</div>
+            <div>Введите Никнейм</div>
         </template>
 
         <template v-slot:fields="{ rules }">
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-    import AppForm from '~/components/forms/AppForm';
+    import AppForm from '../forms/AppForm';
 
     export default {
         name: 'AppNickNameInputForm',

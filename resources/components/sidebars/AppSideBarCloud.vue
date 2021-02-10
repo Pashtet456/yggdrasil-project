@@ -7,7 +7,7 @@
 </template>
 
 <script>
-    import AppPlayersProgressBar from '~/components/minecraft-info/AppPlayersProgressBar';
+    import AppPlayersProgressBar from '../../components/minecraft-info/AppPlayersProgressBar';
     export default {
         name: 'AppSideBarCloud',
         components: { AppPlayersProgressBar },

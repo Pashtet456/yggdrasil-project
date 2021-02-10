@@ -16,10 +16,10 @@
             <!-- Кнопка "Отправить" -->
             <slot name="submit" v-bind="{ loading, submit }">
                 <v-btn v-if="!disableDefaultSubmit"
-                       ref="submit"
                        :disabled="!isFormValid"
                        block
-                       :loading="loading" type="submit">
+                       :loading="loading"
+                       type="submit">
                     {{ submitText }}
                 </v-btn>
             </slot>
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-    import { UserError }  from '~/lib/classes/error';
+    import { UserError }  from '../../lib/classes/error';
 
     export default {
         name: 'AppForm',
@@ -134,7 +134,7 @@
                             console.log( e.message );
                         }
 
-                        this.$emit( 'update:error', this.dataError = e );
+                        this.$emit( 'update:error', e );
                     } finally {
                         setTimeout( () => {
                             this.$emit( 'update:loading', this.loading = false );
@@ -143,7 +143,7 @@
                 }, 0 );
             },
             reload() {
-                this.$emit( 'update:error', this.dataError = null );
+                this.$emit( 'update:error', null );
             },
             clear() {
                 this.$refs.form.reset();
