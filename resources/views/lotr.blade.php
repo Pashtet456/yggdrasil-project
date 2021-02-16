@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-<div id="app">
+<div id="lotr">
     <lotr></lotr>
 </div>
-<script src="./app/app.js"></script>
+<script src="./app/lotr.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import AppNickNameInputForm from '~/components/forms/AppNickNameInputForm';
+    import AppNickNameInputForm from '../../components/forms/AppNickNameInputForm';
     export default {
         name: 'LotrMain',
         components: { AppNickNameInputForm },

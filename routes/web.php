@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('yggdrasil-project');
+    return view('index');
 });
 
 Route::get('/lotr', function () {

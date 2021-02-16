@@ -5,22 +5,14 @@ Vue.use( VueRouter );
 
 const routes = [
     {
-        path: '/',
-        name: 'YggdrasilMain',
-        component: () => import( '../pages/yggdrasil/yggdrasil-main' ),
-        meta: { title:'Главная' },
-    },
-        {
-        path: '/rules',
-        name: 'YggdrasilRules',
-        component: () => import( '../pages/yggdrasil/yggdrasil-rules' ),
-        meta: { title:'Правила' },
+        path: '/lotr/',
+        name: 'LotrMain',
+        component: () => import( '../pages/lotr/lotr-main' ),
     },
     {
-        path: '/donate',
-        name: 'YggdrasilDonate',
-        component: () => import( '../pages/yggdrasil/yggdrasil-donate' ),
-        meta: { title:'Донат' },
+        path: '/lotr/donate',
+        name: 'LotrDonate',
+        component: () => import( '../pages/lotr/lotr-donate' ),
     },
     {
         path: '/authorization',

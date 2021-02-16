@@ -15,6 +15,9 @@ mix.js('resources/app/app.js', 'public/app')
     .vue()
     .sass('resources/assets/scss/main.scss', 'public/css');
 
+mix.js('resources/app/lotr.js', 'public/app')
+    .vue()
+
 mix.alias({
     '@': '/resources/sass',
     '~': '/resources/',
