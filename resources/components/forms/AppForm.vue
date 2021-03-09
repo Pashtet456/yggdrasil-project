@@ -128,7 +128,8 @@
                         this.$emit( 'update:loading', this.loading = true );
                         const result = await axios.get( this.url );
 
-                        this.$emit( 'success', result );
+                        this.$emit( 'update:success', result );
+                        console.log( result );
                     } catch ( e ) {
                         if ( !( e instanceof UserError ) ) {
                             console.log( e.message );

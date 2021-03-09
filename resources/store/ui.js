@@ -1,27 +1,31 @@
 export default {
     namespaced: true,
     state: {
-        alert: {
+        dialog: {
+            isActive: false,
             type: undefined,
             code: undefined,
             message: undefined,
         },
     },
     getters: {
-        appAlertType: state => state.alert.type,
-        appAlertCode: state => state.alert.code,
-        appAlertMessage: state => state.alert.message,
+        appDialogType: state => state.dialog.type,
+        appDialogCode: state => state.dialog.code,
+        appDialogMessage: state => state.dialog.message,
+        appDialogIsActive: state => state.dialog.isActive,
     },
     mutations: {
-        showAlertMessage( state, payload ) {
-            state.alert.type = payload.type;
-            state.alert.code = payload.error?payload.error:payload.status;
-            state.alert.message = payload.message?payload.message:payload.statusText;
+        showDialog( state, payload ) {
+            state.dialog.isActive = true;
+            state.dialog.type = payload.type;
+            state.dialog.code = payload.status;
+            state.dialog.message = payload.message;
         },
-        hideAlertMessage( state ) {
-            state.alert.type = null;
-            state.alert.code = null;
-            state.alert.message = null;
+        hideDialog( state ) {
+            state.dialog.isActive = false;
+            state.dialog.type = null;
+            state.dialog.code = null;
+            state.dialog.message = null;
         },
     },
     actions: {

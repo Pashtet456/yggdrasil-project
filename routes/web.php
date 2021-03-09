@@ -22,8 +22,8 @@ Route::get('/lotr', function () {
 });
 
 Route::get('/api/hello', function () {
-    return response('Hello World', 200)
-        ->header('Content-Type', 'text/plain');
+    return response(['type' => 'success', 'message' => 'Данные успешно сохранены'], 200)
+        ->header('Content-Type', 'application/json');
 });
 
 //Auth::routes();

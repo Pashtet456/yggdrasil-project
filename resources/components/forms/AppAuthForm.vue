@@ -3,7 +3,8 @@
               width="400"
               privacy-check
               :values="values"
-              submit-text="Войти">
+              submit-text="Войти"
+              :success.sync="success">
         <template v-slot:header>
             <div>Вход</div>
         </template>
@@ -37,6 +38,7 @@
                     <v-btn color="primary" text block>
                         Зарегистрироваться
                     </v-btn>
+                    {{ success.data }}
                 </router-link>
             </section>
         </template>
@@ -44,7 +46,8 @@
 </template>
 
 <script>
-    import AppForm from '../forms/AppForm';
+    import AppForm        from '../forms/AppForm';
+    import store from 'vuex';
 
     export default {
         name: 'AppAuthForm',
@@ -55,6 +58,20 @@
                 password: null,
                 isShowPass: false,
             },
+            success: {},
         } ),
+        watch: {
+            success: function ( val ) {
+
+                let {
+                    type,
+                    message,
+                } = val.data;
+                let { status } = val;
+
+                this.$store.commit('ui/showDialog', { type, message, status });
+                return val;
+            },
+        },
     };
 </script>
