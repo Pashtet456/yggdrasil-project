@@ -12,13 +12,13 @@ const opts = {
     theme: {
         themes: {
             light: {
-                primary: '#ff2',
-                secondary: '#111',
-                accent: '#aaa223',
-                error: '#FF5252',
-                info: '#2196F3',
-                success: '#ccc2c2',
-                warning: '#FFC107',
+                // primary: '#ff2',
+                // secondary: '#111',
+                // accent: '#aaa223',
+                // error: '#FF5252',
+                // info: '#2196F3',
+                // success: '#ccc2c2',
+                // warning: '#FFC107',
             },
         },
     },

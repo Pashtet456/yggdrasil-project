@@ -1,5 +1,5 @@
 <template>
-    <app-form url="/api/auth/"
+    <app-form url="/api/hello"
               width="400"
               privacy-check
               :values="values"

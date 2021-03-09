@@ -21,6 +21,11 @@ Route::get('/lotr', function () {
     return view('lotr');
 });
 
+Route::get('/api/hello', function () {
+    return response('Hello World', 200)
+        ->header('Content-Type', 'text/plain');
+});
+
 //Auth::routes();
 //
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

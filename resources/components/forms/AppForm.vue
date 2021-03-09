@@ -126,7 +126,7 @@
                         if ( !this.$refs.form.validate() ) return;
 
                         this.$emit( 'update:loading', this.loading = true );
-                        const result = await this.$http.get( this.url );
+                        const result = await axios.get( this.url );
 
                         this.$emit( 'success', result );
                     } catch ( e ) {
