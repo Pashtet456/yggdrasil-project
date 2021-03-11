@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[497],{4497:(e,t,n)=>{"use strict";n.r(t),n.d(t,{default:()=>l});const s={name:"LotrDonate"};const l=(0,n(1900).Z)(s,(function(){var e=this,t=e.$createElement;return(e._self._c||t)("div",[e._v("LotrDonate")])}),[],!1,null,"79189353",null).exports}}]);

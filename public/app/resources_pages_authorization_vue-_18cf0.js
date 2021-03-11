@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_pages_lotr_lotr-main_vue"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_pages_authorization_vue-_18cf0"],{
 
 /***/ "./node_modules/@babel/runtime/regenerator/index.js":
 /*!**********************************************************!*\
@@ -8,6 +8,82 @@
 
 module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
 
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppAuthForm.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppAuthForm.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _forms_AppForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../forms/AppForm */ "./resources/components/forms/AppForm.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'AppAuthForm',
+  components: {
+    AppForm: _forms_AppForm__WEBPACK_IMPORTED_MODULE_0__.default
+  },
+  data: function data() {
+    return {
+      values: {
+        email: null,
+        password: null,
+        isShowPass: false
+      }
+    };
+  }
+});
 
 /***/ }),
 
@@ -31,7 +107,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
 //
 //
 //
@@ -181,19 +256,18 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _this.$emit('update:loading', _this.loading = true);
 
                 _context.next = 7;
-                return axios.get(_this.url);
+                return _this.$http.get(_this.url);
 
               case 7:
                 result = _context.sent;
 
-                _this.$emit('update:success', result);
+                _this.$emit('success', result);
 
-                console.log(result);
-                _context.next = 16;
+                _context.next = 15;
                 break;
 
-              case 12:
-                _context.prev = 12;
+              case 11:
+                _context.prev = 11;
                 _context.t0 = _context["catch"](0);
 
                 if (!(_context.t0 instanceof _lib_classes_error__WEBPACK_IMPORTED_MODULE_1__.UserError)) {
@@ -202,19 +276,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                 _this.$emit('update:error', _context.t0);
 
-              case 16:
-                _context.prev = 16;
+              case 15:
+                _context.prev = 15;
                 setTimeout(function () {
                   _this.$emit('update:loading', _this.loading = false);
                 }, 500);
-                return _context.finish(16);
+                return _context.finish(15);
 
-              case 19:
+              case 18:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 12, 16, 19]]);
+        }, _callee, null, [[0, 11, 15, 18]]);
       })), 0);
     },
     reload: function reload() {
@@ -228,10 +302,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js&":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/authorization.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/authorization.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -239,97 +313,283 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _forms_AppForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../forms/AppForm */ "./resources/components/forms/AppForm.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _components_forms_AppAuthForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/forms/AppAuthForm */ "./resources/components/forms/AppAuthForm.vue");
 //
 //
 //
 //
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'AppNickNameInputForm',
+  name: 'Auth',
   components: {
-    AppForm: _forms_AppForm__WEBPACK_IMPORTED_MODULE_0__.default
-  },
-  data: function data() {
-    return {
-      values: {
-        name: null,
-        checkbox: null
-      }
-    };
+    AppAuthForm: _components_forms_AppAuthForm__WEBPACK_IMPORTED_MODULE_0__.default
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************************************************************************************************************/
+/***/ "./resources/lib/classes/error.js":
+/*!****************************************!*\
+  !*** ./resources/lib/classes/error.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "UserError": () => (/* binding */ UserError),
+/* harmony export */   "SystemError": () => (/* binding */ SystemError),
+/* harmony export */   "RequestError": () => (/* binding */ RequestError),
+/* harmony export */   "ValidationError": () => (/* binding */ ValidationError),
+/* harmony export */   "InvalidValueError": () => (/* binding */ InvalidValueError),
+/* harmony export */   "InvalidTypeError": () => (/* binding */ InvalidTypeError),
+/* harmony export */   "FieldRequiredError": () => (/* binding */ FieldRequiredError),
+/* harmony export */   "FieldInvalidTypeError": () => (/* binding */ FieldInvalidTypeError),
+/* harmony export */   "ApiResponseError": () => (/* binding */ ApiResponseError)
 /* harmony export */ });
-/* harmony import */ var _components_forms_AppNickNameInputForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/forms/AppNickNameInputForm */ "./resources/components/forms/AppNickNameInputForm.vue");
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _constants_error__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants/error */ "./resources/lib/constants/error.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'LotrMain',
-  components: {
-    AppNickNameInputForm: _components_forms_AppNickNameInputForm__WEBPACK_IMPORTED_MODULE_0__.default
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _wrapNativeSuper(Class) { var _cache = typeof Map === "function" ? new Map() : undefined; _wrapNativeSuper = function _wrapNativeSuper(Class) { if (Class === null || !_isNativeFunction(Class)) return Class; if (typeof Class !== "function") { throw new TypeError("Super expression must either be null or a function"); } if (typeof _cache !== "undefined") { if (_cache.has(Class)) return _cache.get(Class); _cache.set(Class, Wrapper); } function Wrapper() { return _construct(Class, arguments, _getPrototypeOf(this).constructor); } Wrapper.prototype = Object.create(Class.prototype, { constructor: { value: Wrapper, enumerable: false, writable: true, configurable: true } }); return _setPrototypeOf(Wrapper, Class); }; return _wrapNativeSuper(Class); }
+
+function _construct(Parent, args, Class) { if (_isNativeReflectConstruct()) { _construct = Reflect.construct; } else { _construct = function _construct(Parent, args, Class) { var a = [null]; a.push.apply(a, args); var Constructor = Function.bind.apply(Parent, a); var instance = new Constructor(); if (Class) _setPrototypeOf(instance, Class.prototype); return instance; }; } return _construct.apply(null, arguments); }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _isNativeFunction(fn) { return Function.toString.call(fn).indexOf("[native code]") !== -1; }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+/**
+ * Базовый класс ошибки
+ */
+
+var LegacyError = /*#__PURE__*/function (_Error) {
+  _inherits(LegacyError, _Error);
+
+  var _super = _createSuper(LegacyError);
+
+  function LegacyError(message) {
+    var _this;
+
+    _classCallCheck(this, LegacyError);
+
+    _this = _super.call(this, message);
+    _this.name = _this.constructor.name;
+    return _this;
   }
-});
+
+  return LegacyError;
+}( /*#__PURE__*/_wrapNativeSuper(Error));
+/**
+ * Класс пользовательских ошибок
+ */
+
+
+var UserError = /*#__PURE__*/function (_LegacyError) {
+  _inherits(UserError, _LegacyError);
+
+  var _super2 = _createSuper(UserError);
+
+  function UserError(message) {
+    var _this2;
+
+    _classCallCheck(this, UserError);
+
+    _this2 = _super2.call(this, message);
+    _this2.errorCode = _constants_error__WEBPACK_IMPORTED_MODULE_0__.USER_ERROR;
+    return _this2;
+  }
+
+  return UserError;
+}(LegacyError);
+/**
+ * Класс системных ошибок
+ *
+ * Включает в сообщение название класса.
+ */
+
+var SystemError = /*#__PURE__*/function (_LegacyError2) {
+  _inherits(SystemError, _LegacyError2);
+
+  var _super3 = _createSuper(SystemError);
+
+  function SystemError(message) {
+    var _this3;
+
+    _classCallCheck(this, SystemError);
+
+    _this3 = _super3.call(this, message);
+    _this3.errorCode = _constants_error__WEBPACK_IMPORTED_MODULE_0__.SYSTEM_ERROR;
+    _this3.message = "".concat(_this3.name, ": ").concat(_this3.message);
+    return _this3;
+  }
+
+  return SystemError;
+}(LegacyError);
+/**
+ * Класс ошибок сетевых запросов
+ */
+
+var RequestError = /*#__PURE__*/function (_SystemError) {
+  _inherits(RequestError, _SystemError);
+
+  var _super4 = _createSuper(RequestError);
+
+  function RequestError(message) {
+    var _this4;
+
+    var statusCode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 400;
+
+    _classCallCheck(this, RequestError);
+
+    _this4 = _super4.call(this, message);
+    _this4.statusCode = statusCode;
+    return _this4;
+  }
+
+  return RequestError;
+}(SystemError);
+/**
+ * Базовый класс ошибок валидации
+ */
+
+var ValidationError = /*#__PURE__*/function (_SystemError2) {
+  _inherits(ValidationError, _SystemError2);
+
+  var _super5 = _createSuper(ValidationError);
+
+  function ValidationError() {
+    _classCallCheck(this, ValidationError);
+
+    return _super5.apply(this, arguments);
+  }
+
+  return ValidationError;
+}(SystemError);
+/**
+ * Уточняющий класс ошибок: некорректное значение
+ */
+
+var InvalidValueError = /*#__PURE__*/function (_ValidationError) {
+  _inherits(InvalidValueError, _ValidationError);
+
+  var _super6 = _createSuper(InvalidValueError);
+
+  function InvalidValueError() {
+    _classCallCheck(this, InvalidValueError);
+
+    return _super6.apply(this, arguments);
+  }
+
+  return InvalidValueError;
+}(ValidationError);
+/**
+ * Уточняющий класс ошибок: некорректный тип
+ */
+
+var InvalidTypeError = /*#__PURE__*/function (_ValidationError2) {
+  _inherits(InvalidTypeError, _ValidationError2);
+
+  var _super7 = _createSuper(InvalidTypeError);
+
+  function InvalidTypeError() {
+    _classCallCheck(this, InvalidTypeError);
+
+    return _super7.apply(this, arguments);
+  }
+
+  return InvalidTypeError;
+}(ValidationError);
+/**
+ * Уточняющий класс ошибок: некорректное значение свойства объекта
+ */
+
+var FieldRequiredError = /*#__PURE__*/function (_ValidationError3) {
+  _inherits(FieldRequiredError, _ValidationError3);
+
+  var _super8 = _createSuper(FieldRequiredError);
+
+  function FieldRequiredError() {
+    _classCallCheck(this, FieldRequiredError);
+
+    return _super8.apply(this, arguments);
+  }
+
+  return FieldRequiredError;
+}(ValidationError);
+/**
+ * Уточняющий класс ошибок: некорректный тип свойства объекта
+ */
+
+var FieldInvalidTypeError = /*#__PURE__*/function (_ValidationError4) {
+  _inherits(FieldInvalidTypeError, _ValidationError4);
+
+  var _super9 = _createSuper(FieldInvalidTypeError);
+
+  function FieldInvalidTypeError() {
+    _classCallCheck(this, FieldInvalidTypeError);
+
+    return _super9.apply(this, arguments);
+  }
+
+  return FieldInvalidTypeError;
+}(ValidationError);
+/**
+ * Класс ошибок ответа API
+ */
+
+var ApiResponseError = /*#__PURE__*/function (_LegacyError3) {
+  _inherits(ApiResponseError, _LegacyError3);
+
+  var _super10 = _createSuper(ApiResponseError);
+
+  function ApiResponseError() {
+    _classCallCheck(this, ApiResponseError);
+
+    return _super10.apply(this, arguments);
+  }
+
+  return ApiResponseError;
+}(LegacyError);
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./resources/lib/constants/error.js":
+/*!******************************************!*\
+  !*** ./resources/lib/constants/error.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "NO_ERROR": () => (/* binding */ NO_ERROR),
+/* harmony export */   "SYSTEM_ERROR": () => (/* binding */ SYSTEM_ERROR),
+/* harmony export */   "USER_ERROR": () => (/* binding */ USER_ERROR),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, ".app-form[data-v-33820104] {\n  width: 400px;\n  margin: auto;\n}", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
+var NO_ERROR = 0;
+var SYSTEM_ERROR = 1;
+var USER_ERROR = 2;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  NO_ERROR: NO_ERROR,
+  USER_ERROR: USER_ERROR,
+  SYSTEM_ERROR: SYSTEM_ERROR
+});
 
 /***/ }),
 
@@ -1091,10 +1351,10 @@ try {
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&":
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./resources/components/forms/AppAuthForm.vue":
+/*!****************************************************!*\
+  !*** ./resources/components/forms/AppAuthForm.vue ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1102,22 +1362,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForm_vue_vue_type_style_index_0_id_33820104_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForm_vue_vue_type_style_index_0_id_33820104_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__.default, options);
+/* harmony import */ var _AppAuthForm_vue_vue_type_template_id_512c06cc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppAuthForm.vue?vue&type=template&id=512c06cc& */ "./resources/components/forms/AppAuthForm.vue?vue&type=template&id=512c06cc&");
+/* harmony import */ var _AppAuthForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppAuthForm.vue?vue&type=script&lang=js& */ "./resources/components/forms/AppAuthForm.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForm_vue_vue_type_style_index_0_id_33820104_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _AppAuthForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _AppAuthForm_vue_vue_type_template_id_512c06cc___WEBPACK_IMPORTED_MODULE_0__.render,
+  _AppAuthForm_vue_vue_type_template_id_512c06cc___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/components/forms/AppAuthForm.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
@@ -1134,17 +1403,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _AppForm_vue_vue_type_template_id_33820104_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppForm.vue?vue&type=template&id=33820104&scoped=true& */ "./resources/components/forms/AppForm.vue?vue&type=template&id=33820104&scoped=true&");
 /* harmony import */ var _AppForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppForm.vue?vue&type=script&lang=js& */ "./resources/components/forms/AppForm.vue?vue&type=script&lang=js&");
-/* harmony import */ var _AppForm_vue_vue_type_style_index_0_id_33820104_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& */ "./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
-;
 
 
 /* normalize component */
-
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__.default)(
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
   _AppForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
   _AppForm_vue_vue_type_template_id_33820104_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
   _AppForm_vue_vue_type_template_id_33820104_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
@@ -1162,10 +1429,10 @@ component.options.__file = "resources/components/forms/AppForm.vue"
 
 /***/ }),
 
-/***/ "./resources/components/forms/AppNickNameInputForm.vue":
-/*!*************************************************************!*\
-  !*** ./resources/components/forms/AppNickNameInputForm.vue ***!
-  \*************************************************************/
+/***/ "./resources/pages/authorization.vue":
+/*!*******************************************!*\
+  !*** ./resources/pages/authorization.vue ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1173,9 +1440,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppNickNameInputForm.vue?vue&type=template&id=059d66b0& */ "./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0&");
-/* harmony import */ var _AppNickNameInputForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppNickNameInputForm.vue?vue&type=script&lang=js& */ "./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _authorization_vue_vue_type_template_id_74a39de6_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./authorization.vue?vue&type=template&id=74a39de6&scoped=true&class=form& */ "./resources/pages/authorization.vue?vue&type=template&id=74a39de6&scoped=true&class=form&");
+/* harmony import */ var _authorization_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./authorization.vue?vue&type=script&lang=js& */ "./resources/pages/authorization.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -1184,27 +1451,27 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _AppNickNameInputForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__.render,
-  _AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _authorization_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _authorization_vue_vue_type_template_id_74a39de6_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__.render,
+  _authorization_vue_vue_type_template_id_74a39de6_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
-  null,
+  "74a39de6",
   null
   
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/components/forms/AppNickNameInputForm.vue"
+component.options.__file = "resources/pages/authorization.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/pages/lotr/lotr-main.vue":
-/*!********************************************!*\
-  !*** ./resources/pages/lotr/lotr-main.vue ***!
-  \********************************************/
+/***/ "./resources/components/forms/AppAuthForm.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/components/forms/AppAuthForm.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1212,31 +1479,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _lotr_main_vue_vue_type_template_id_bab5ec4c_class_main___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lotr-main.vue?vue&type=template&id=bab5ec4c&class=main& */ "./resources/pages/lotr/lotr-main.vue?vue&type=template&id=bab5ec4c&class=main&");
-/* harmony import */ var _lotr_main_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lotr-main.vue?vue&type=script&lang=js& */ "./resources/pages/lotr/lotr-main.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _lotr_main_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _lotr_main_vue_vue_type_template_id_bab5ec4c_class_main___WEBPACK_IMPORTED_MODULE_0__.render,
-  _lotr_main_vue_vue_type_template_id_bab5ec4c_class_main___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/pages/lotr/lotr-main.vue"
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAuthForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppAuthForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppAuthForm.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAuthForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -1256,10 +1500,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************!*\
-  !*** ./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************/
+/***/ "./resources/pages/authorization.vue?vue&type=script&lang=js&":
+/*!********************************************************************!*\
+  !*** ./resources/pages/authorization.vue?vue&type=script&lang=js& ***!
+  \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1267,36 +1511,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppNickNameInputForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppNickNameInputForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppNickNameInputForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_authorization_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./authorization.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/authorization.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_authorization_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
-/***/ "./resources/pages/lotr/lotr-main.vue?vue&type=script&lang=js&":
-/*!*********************************************************************!*\
-  !*** ./resources/pages/lotr/lotr-main.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************/
+/***/ "./resources/components/forms/AppAuthForm.vue?vue&type=template&id=512c06cc&":
+/*!***********************************************************************************!*\
+  !*** ./resources/components/forms/AppAuthForm.vue?vue&type=template&id=512c06cc& ***!
+  \***********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAuthForm_vue_vue_type_template_id_512c06cc___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAuthForm_vue_vue_type_template_id_512c06cc___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_lotr_main_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./lotr-main.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_lotr_main_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
-
-/***/ }),
-
-/***/ "./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&":
-/*!**********************************************************************************************************!*\
-  !*** ./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& ***!
-  \**********************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForm_vue_vue_type_style_index_0_id_33820104_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAuthForm_vue_vue_type_template_id_512c06cc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppAuthForm.vue?vue&type=template&id=512c06cc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppAuthForm.vue?vue&type=template&id=512c06cc&");
 
 
 /***/ }),
@@ -1318,36 +1550,163 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0&":
-/*!********************************************************************************************!*\
-  !*** ./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0& ***!
-  \********************************************************************************************/
+/***/ "./resources/pages/authorization.vue?vue&type=template&id=74a39de6&scoped=true&class=form&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/pages/authorization.vue?vue&type=template&id=74a39de6&scoped=true&class=form& ***!
+  \*************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_authorization_vue_vue_type_template_id_74a39de6_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_authorization_vue_vue_type_template_id_74a39de6_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppNickNameInputForm.vue?vue&type=template&id=059d66b0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_authorization_vue_vue_type_template_id_74a39de6_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./authorization.vue?vue&type=template&id=74a39de6&scoped=true&class=form& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/authorization.vue?vue&type=template&id=74a39de6&scoped=true&class=form&");
 
 
 /***/ }),
 
-/***/ "./resources/pages/lotr/lotr-main.vue?vue&type=template&id=bab5ec4c&class=main&":
-/*!**************************************************************************************!*\
-  !*** ./resources/pages/lotr/lotr-main.vue?vue&type=template&id=bab5ec4c&class=main& ***!
-  \**************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppAuthForm.vue?vue&type=template&id=512c06cc&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppAuthForm.vue?vue&type=template&id=512c06cc& ***!
+  \**************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_lotr_main_vue_vue_type_template_id_bab5ec4c_class_main___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_lotr_main_vue_vue_type_template_id_bab5ec4c_class_main___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_lotr_main_vue_vue_type_template_id_bab5ec4c_class_main___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./lotr-main.vue?vue&type=template&id=bab5ec4c&class=main& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main.vue?vue&type=template&id=bab5ec4c&class=main&");
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("app-form", {
+    attrs: {
+      url: "/api/auth/",
+      width: "400",
+      "privacy-check": "",
+      values: _vm.values,
+      "submit-text": "Войти"
+    },
+    scopedSlots: _vm._u([
+      {
+        key: "header",
+        fn: function() {
+          return [_c("div", [_vm._v("Вход")])]
+        },
+        proxy: true
+      },
+      {
+        key: "fields",
+        fn: function(ref) {
+          var rules = ref.rules
+          return [
+            _c("v-text-field", {
+              attrs: {
+                rules: [rules.required, rules.email],
+                outlined: "",
+                label: "E-mail"
+              },
+              model: {
+                value: _vm.values.email,
+                callback: function($$v) {
+                  _vm.$set(_vm.values, "email", $$v)
+                },
+                expression: "values.email"
+              }
+            }),
+            _vm._v(" "),
+            _c("v-text-field", {
+              attrs: {
+                rules: [rules.required],
+                outlined: "",
+                label: "Пароль",
+                type: _vm.values.isShowPass ? "text" : "password",
+                "append-icon": _vm.values.isShowPass ? "mdi-eye" : "mdi-eye-off"
+              },
+              on: {
+                "click:append": function($event) {
+                  _vm.values.isShowPass = !_vm.values.isShowPass
+                }
+              },
+              model: {
+                value: _vm.values.password,
+                callback: function($$v) {
+                  _vm.$set(_vm.values, "password", $$v)
+                },
+                expression: "values.password"
+              }
+            })
+          ]
+        }
+      },
+      {
+        key: "footer",
+        fn: function() {
+          return [
+            _c(
+              "section",
+              { staticClass: "list-mb-4" },
+              [
+                _c("v-divider"),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "text-decoration-none",
+                    attrs: { to: "/forgot-password" }
+                  },
+                  [
+                    _c(
+                      "v-btn",
+                      { attrs: { color: "primary", text: "", block: "" } },
+                      [
+                        _vm._v(
+                          "\n                    Забыли пароль?\n                "
+                        )
+                      ]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("v-divider"),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "text-decoration-none",
+                    attrs: { to: "/registration" }
+                  },
+                  [
+                    _c(
+                      "v-btn",
+                      { attrs: { color: "primary", text: "", block: "" } },
+                      [
+                        _vm._v(
+                          "\n                    Зарегистрироваться\n                "
+                        )
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ]
+        },
+        proxy: true
+      }
+    ])
+  })
+}
+var staticRenderFns = []
+render._withStripped = true
+
 
 
 /***/ }),
@@ -1372,7 +1731,6 @@ var render = function() {
     "v-form",
     {
       ref: "form",
-      staticClass: "app-form",
       on: {
         submit: function($event) {
           $event.preventDefault()
@@ -1447,10 +1805,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0&":
-/*!***********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0& ***!
-  \***********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/authorization.vue?vue&type=template&id=74a39de6&scoped=true&class=form&":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/authorization.vue?vue&type=template&id=74a39de6&scoped=true&class=form& ***!
+  \****************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1463,93 +1821,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("app-form", {
-    attrs: {
-      url: "/api/auth/",
-      width: "400",
-      values: _vm.values,
-      "submit-text": "Сохранить"
-    },
-    scopedSlots: _vm._u([
-      {
-        key: "header",
-        fn: function() {
-          return [_c("div", [_vm._v("Введите Никнейм")])]
-        },
-        proxy: true
-      },
-      {
-        key: "fields",
-        fn: function(ref) {
-          var rules = ref.rules
-          return [
-            _c("v-text-field", {
-              attrs: {
-                rules: [rules.required, rules.name],
-                outlined: "",
-                label: "Никнейм"
-              },
-              model: {
-                value: _vm.values.name,
-                callback: function($$v) {
-                  _vm.$set(_vm.values, "name", $$v)
-                },
-                expression: "values.name"
-              }
-            }),
-            _vm._v(" "),
-            _c("v-checkbox", {
-              staticClass: "mt-0 mb-4",
-              attrs: {
-                rules: [rules.privacy],
-                outlined: "",
-                label:
-                  "Я понимаю, что этот никнейм нельзя будет изменить бесплатно.",
-                type: "checkbox"
-              },
-              model: {
-                value: _vm.values.checkbox,
-                callback: function($$v) {
-                  _vm.$set(_vm.values, "checkbox", $$v)
-                },
-                expression: "values.checkbox"
-              }
-            })
-          ]
-        }
-      }
-    ])
-  })
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main.vue?vue&type=template&id=bab5ec4c&class=main&":
-/*!*****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main.vue?vue&type=template&id=bab5ec4c&class=main& ***!
-  \*****************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* binding */ render),
-/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
-/* harmony export */ });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "v-card",
-    { staticClass: "ma-auto", attrs: { rounded: "", width: "500px" } },
-    [_c("app-nick-name-input-form")],
-    1
-  )
+  return _c("AppAuthForm")
 }
 var staticRenderFns = []
 render._withStripped = true

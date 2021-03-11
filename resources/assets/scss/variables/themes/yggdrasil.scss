@@ -1,14 +1,5 @@
 $yggdrasil-project: (
-    'main': (
-        'max-width': 1000px,
-        'bg-image': '/assets/img/dis.png',
-    ),
-    'texts': (
-        'error--text': red,
-        'primary--text': #bebebe,
-        'secondary--text': #3a3837,
-    ),
-    'forms': (
-        'color': green,
+    'global': (
+        'bg-color': #3a3837,
     ),
 );

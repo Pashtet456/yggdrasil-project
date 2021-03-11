@@ -1,15 +1,14 @@
 <template>
     <div>
-        ssss
-        {{ appDialogType?dialog=true:appDialogType }}
-        {{ appDialogType }}
-        {{ dialog }}
-        <v-dialog v-model="dialog" persistent>
-            <v-btn
-                    color="primary"
-                    text
-                    @click="dialog = false"
-            >
+        <v-dialog v-model="appDialogIsActive"
+                  persistent
+                  width="400">
+            <v-card>
+                {{ appDialogMessage }}
+            </v-card>
+            <v-btn color="primary"
+                   text
+                   @click="hideDialog">
                 I accept
             </v-btn>
         </v-dialog>
@@ -17,20 +16,15 @@
 </template>
 
 <script>
-    import { mapGetters } from 'vuex';
+    import { mapGetters, mapMutations } from 'vuex';
     export default {
         name: 'AppDialog',
-        // data: function() {
-        //     return {
-        //         dialog: false,
-        //     }
-        // },
         computed: {
-            ...mapGetters('ui', ['appDialogType']),
-            dialog: function () {
-                if (this.appDialogType )
-            },
+            ...mapGetters('ui', ['appDialogIsActive', 'appDialogMessage']),
         },
+        methods: {
+            ...mapMutations('ui',['hideDialog']),
+        }
     };
 </script>
 

@@ -1,8 +1,5 @@
 @mixin project($component) {
-    .yggdrasil.#{$component} {
+    .#{$component} {
         @content($yggdrasil-project);
     }
-    //.lotr.#{$component} {
-    //    @content($lotr-project);
-    //}
 }

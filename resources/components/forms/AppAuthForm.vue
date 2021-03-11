@@ -1,6 +1,5 @@
 <template>
     <app-form url="/api/hello"
-              width="400"
               privacy-check
               :values="values"
               submit-text="Войти"

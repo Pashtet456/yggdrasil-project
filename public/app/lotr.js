@@ -2418,33 +2418,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   namespaced: true,
   state: {
-    alert: {
+    dialog: {
+      isActive: false,
       type: undefined,
       code: undefined,
       message: undefined
     }
   },
   getters: {
-    appAlertType: function appAlertType(state) {
-      return state.alert.type;
+    appDialogType: function appDialogType(state) {
+      return state.dialog.type;
     },
-    appAlertCode: function appAlertCode(state) {
-      return state.alert.code;
+    appDialogCode: function appDialogCode(state) {
+      return state.dialog.code;
     },
-    appAlertMessage: function appAlertMessage(state) {
-      return state.alert.message;
+    appDialogMessage: function appDialogMessage(state) {
+      return state.dialog.message;
+    },
+    appDialogIsActive: function appDialogIsActive(state) {
+      return state.dialog.isActive;
     }
   },
   mutations: {
-    showAlertMessage: function showAlertMessage(state, payload) {
-      state.alert.type = payload.type;
-      state.alert.code = payload.error ? payload.error : payload.status;
-      state.alert.message = payload.message ? payload.message : payload.statusText;
+    showDialog: function showDialog(state, payload) {
+      state.dialog.isActive = true;
+      state.dialog.type = payload.type;
+      state.dialog.code = payload.status;
+      state.dialog.message = payload.message;
     },
-    hideAlertMessage: function hideAlertMessage(state) {
-      state.alert.type = null;
-      state.alert.code = null;
-      state.alert.message = null;
+    hideDialog: function hideDialog(state) {
+      state.dialog.isActive = false;
+      state.dialog.type = null;
+      state.dialog.code = null;
+      state.dialog.message = null;
     }
   },
   actions: {}

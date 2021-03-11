@@ -1,12 +1,6 @@
 <template>
     <router-link :to="link">
-        <v-img
-               height="100"
-               width="100"/>
-        <div v-bind:style="`background-image: url(${publicPath})`">
-
-        </div>
-        <div class="img">
+        <div class="sidebar-image">
 
         </div>
     </router-link>
@@ -33,11 +27,6 @@
     };
 </script>
 
-<style scoped>
-/*.img {*/
-/*    background-image: url(../../assets/img/vk.png);*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center;*/
-/*    background-size: 64px 64px;*/
-/*}*/
+<style lang="scss" scoped>
+
 </style>

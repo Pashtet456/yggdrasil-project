@@ -1,6 +1,7 @@
 <template>
     <!-- Форма -->
     <v-form ref="form"
+            class="app-form"
             v-model="isFormValid"
             @submit.prevent="submit">
         <!-- Хэдер -->
@@ -154,5 +155,8 @@
 </script>
 
 <style lang="scss" scoped>
-
+.app-form {
+    width: 400px;
+    margin: auto;
+}
 </style>

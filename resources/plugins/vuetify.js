@@ -10,10 +10,14 @@ const opts = {
         iconfont: 'mdi',
     },
     theme: {
+        options: {
+            customProperties: true,
+        },
+        dark: true,
         themes: {
-            light: {
-                // primary: '#ff2',
-                // secondary: '#111',
+            dark: {
+                primary: '#bebebe',
+                secondary: '#3a3837',
                 // accent: '#aaa223',
                 // error: '#FF5252',
                 // info: '#2196F3',

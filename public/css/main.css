@@ -1,48 +1,37 @@
-.app {
+#app {
   box-sizing: border-box;
   word-break: normal;
   overflow: hidden;
 }
 
-.app *,
-.app ::before,
-.app ::after {
+#app *,
+#app ::before,
+#app ::after {
   background-repeat: no-repeat;
   box-sizing: inherit;
 }
 
-.app ::before,
-.app ::after {
+#app ::before,
+#app ::after {
   text-decoration: inherit;
   vertical-align: inherit;
 }
 
-.yggdrasil.v-application .v-main .container {
-  max-width: 1000px !important;
-  margin: auto;
-  text-align: center;
+#app .v-app-bar.v-toolbar.v-sheet {
+  background-color: #3a3837;
 }
 
-.yggdrasil.v-application .v-form {
-  max-width: 800px;
-  margin: 50px auto 0 auto;
-}
-
-.yggdrasil.v-application .v-input input {
-  color: green !important;
-}
-
-.yggdrasil.v-application .error--text {
-  color: red !important;
-}
-
-.yggdrasil.v-application .primary--text {
-  color: #bebebe !important;
+.v-application .v-app-bar.v-toolbar.v-sheet {
+  background-color: #3a3837 !important;
 }
 
 * {
   padding: 0;
   margin: 0;
+}
+
+.theme--dark.v-app-bar.v-toolbar.v-sheet {
+  background-color: red !important;
 }
 
 

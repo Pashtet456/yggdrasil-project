@@ -1,3 +1,7 @@
 @import "mixins/index";
 @import "variables/index";
 @import "components/index";
+
+.theme--dark.v-app-bar.v-toolbar.v-sheet {
+    background-color: red !important;
+}
