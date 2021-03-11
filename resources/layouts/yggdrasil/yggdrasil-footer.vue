@@ -1,5 +1,5 @@
 <template app>
-    <v-footer></v-footer>
+    <v-footer width="0" height="0" class="pa-0 ma-0"></v-footer>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 const mix = require('laravel-mix');
-
+const path = require('path');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -16,8 +16,13 @@ mix.js('resources/app/app.js', 'public/app')
     .sass('resources/assets/scss/main.scss', 'public/css')
     .vue();
 
-mix.alias({
-    '@': '/resources/assets/sass',
-    '~': '/resources/',
-});
+mix.webpackConfig(
+    {
+        resolve: {
+            alias: {
+                '@': path.resolve(__dirname, 'src/utilities/'),
+                '~': path.resolve(__dirname, 'resources/assets/scss/'),
+            },
+        }
+    })
 

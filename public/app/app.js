@@ -1856,6 +1856,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -2990,9 +2991,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _assets_fonts_Montserrat_Montserrat_Regular_woff2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/fonts/Montserrat/Montserrat-Regular.woff2 */ "./resources/assets/fonts/Montserrat/Montserrat-Regular.woff2");
-/* harmony import */ var _assets_img_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/img/logo.png */ "./resources/assets/img/logo.png");
-/* harmony import */ var _assets_img_dis_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/img/dis.png */ "./resources/assets/img/dis.png");
+/* harmony import */ var _assets_img_yggdrasilMainBg_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/img/yggdrasilMainBg.webp */ "./resources/assets/img/yggdrasilMainBg.webp");
+/* harmony import */ var _assets_img_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/img/logo.png */ "./resources/assets/img/logo.png");
+/* harmony import */ var _assets_img_dis_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/img/dis.png */ "./resources/assets/img/dis.png");
 // Imports
+
 
 
 
@@ -3000,10 +3003,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Montserrat_Regular_woff2__WEBPACK_IMPORTED_MODULE_2__.default);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_img_logo_png__WEBPACK_IMPORTED_MODULE_3__.default);
-var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_img_dis_png__WEBPACK_IMPORTED_MODULE_4__.default);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_img_yggdrasilMainBg_webp__WEBPACK_IMPORTED_MODULE_3__.default);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_img_logo_png__WEBPACK_IMPORTED_MODULE_4__.default);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_img_dis_png__WEBPACK_IMPORTED_MODULE_5__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"Montserrat\";\n  src: local(\"Montserrat Regular\"), local(\"Montserrat-Regular\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\");\n  font-style: normal;\n  font-weight: normal;\n  font-display: swap;\n}\n.theme--dark {\n  font-family: Montserrat, sans-serif;\n}\n.theme--dark.v-list {\n  background: transparent !important;\n}\n.theme--dark.v-application {\n  background-color: #3a3837 !important;\n}\n.theme--dark.v-application a {\n  text-decoration: none;\n}\n.theme--dark.v-toolbar.v-sheet {\n  background-color: #3a3837 !important;\n}\n.side-bar-item {\n  width: 64px;\n  height: 64px;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: 64px 64px;\n}\n.side-bar-item:first-child {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"Montserrat\";\n  src: local(\"Montserrat Regular\"), local(\"Montserrat-Regular\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\");\n  font-style: normal;\n  font-weight: normal;\n  font-display: swap;\n}\n.main {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  background-size: cover;\n}\n.theme--dark {\n  font-family: Montserrat, sans-serif;\n}\n.theme--dark.v-list {\n  background: transparent !important;\n}\n.theme--dark.v-application {\n  background-color: #3a3837 !important;\n}\n.theme--dark.v-application a {\n  text-decoration: none;\n}\n.theme--dark.v-toolbar.v-sheet {\n  background-color: #3a3837 !important;\n}\n.side-bar-item {\n  width: 64px;\n  height: 64px;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: 64px 64px;\n}\n.side-bar-item:first-child {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3322,6 +3326,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/vk.png?d4d711caad474b364ac2a7609c968a17");
+
+/***/ }),
+
+/***/ "./resources/assets/img/yggdrasilMainBg.webp":
+/*!***************************************************!*\
+  !*** ./resources/assets/img/yggdrasilMainBg.webp ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/yggdrasilMainBg.webp?6e46fb38e1cec4c15b1877c834e3f5d2");
 
 /***/ }),
 
@@ -4880,9 +4899,11 @@ var render = function() {
   return _c(
     "v-app",
     [
+      _c("link", { attrs: { rel: "stylesheet", href: "~/main.scss" } }),
+      _vm._v(" "),
       _c("yggdrasil-header"),
       _vm._v(" "),
-      _c("yggdrasil-main"),
+      _c("yggdrasil-main", { staticClass: "main" }),
       _vm._v(" "),
       _c("yggdrasil-footer")
     ],
@@ -5128,7 +5149,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("v-footer")
+  return _c("v-footer", {
+    staticClass: "pa-0 ma-0",
+    attrs: { width: "0", height: "0" }
+  })
 }
 var staticRenderFns = []
 render._withStripped = true

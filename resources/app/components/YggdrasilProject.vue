@@ -1,7 +1,8 @@
 <template>
     <v-app>
+        <link rel="stylesheet" href="~/main.scss">
         <yggdrasil-header></yggdrasil-header>
-        <yggdrasil-main></yggdrasil-main>
+        <yggdrasil-main class="main"></yggdrasil-main>
         <yggdrasil-footer></yggdrasil-footer>
     </v-app>
 </template>
@@ -27,6 +28,10 @@
         font-style: normal;
         font-weight: normal;
         font-display: swap;
+    }
+    .main {
+        background-image: url("../../assets/img/yggdrasilMainBg.webp");
+        background-size: cover;
     }
     .theme--dark {
 
