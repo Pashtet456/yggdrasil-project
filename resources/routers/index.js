@@ -7,19 +7,19 @@ const routes = [
     {
         path: '/',
         name: 'YggdrasilMain',
-        component: () => import( '../pages/yggdrasil/yggdrasil-main' ),
+        component: () => import( '../pages/yggdrasil/yggdrasil-main-page' ),
         meta: { title:'Главная' },
     },
         {
         path: '/rules',
         name: 'YggdrasilRules',
-        component: () => import( '../pages/yggdrasil/yggdrasil-rules' ),
+        component: () => import( '../pages/yggdrasil/yggdrasil-rules-page' ),
         meta: { title:'Правила' },
     },
     {
         path: '/donate',
         name: 'YggdrasilDonate',
-        component: () => import( '../pages/yggdrasil/yggdrasil-donate' ),
+        component: () => import( '../pages/yggdrasil/yggdrasil-donate-page' ),
         meta: { title:'Донат' },
     },
     {

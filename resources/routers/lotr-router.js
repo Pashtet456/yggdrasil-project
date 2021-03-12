@@ -7,12 +7,17 @@ const routes = [
     {
         path: '/lotr/',
         name: 'LotrMain',
-        component: () => import( '../pages/lotr/lotr-main' ),
+        component: () => import( '../pages/lotr/lotr-main-page' ),
     },
     {
         path: '/lotr/donate',
         name: 'LotrDonate',
-        component: () => import( '../pages/lotr/lotr-donate' ),
+        component: () => import( '../pages/lotr/lotr-donate-page' ),
+    },
+    {
+        path: '/lotr/rules',
+        name: 'LotrRules',
+        component: () => import( '../pages/lotr/lotr-rules-page' ),
     },
     {
         path: '/authorization',

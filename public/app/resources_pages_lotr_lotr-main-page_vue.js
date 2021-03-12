@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_pages_forgot-password_vue-_43af0"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_pages_lotr_lotr-main-page_vue"],{
 
 /***/ "./node_modules/@babel/runtime/regenerator/index.js":
 /*!**********************************************************!*\
@@ -8,64 +8,6 @@
 
 module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
 
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForgotPasswordForm.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForgotPasswordForm.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _forms_AppForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../forms/AppForm */ "./resources/components/forms/AppForm.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'AppForgotPassportForm',
-  components: {
-    AppForm: _forms_AppForm__WEBPACK_IMPORTED_MODULE_0__.default
-  },
-  data: function data() {
-    return {
-      values: {
-        email: null
-      }
-    };
-  }
-});
 
 /***/ }),
 
@@ -286,10 +228,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/forgot-password.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/forgot-password.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -297,16 +239,71 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_forms_AppForgotPasswordForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/forms/AppForgotPasswordForm */ "./resources/components/forms/AppForgotPasswordForm.vue");
+/* harmony import */ var _forms_AppForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../forms/AppForm */ "./resources/components/forms/AppForm.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
 //
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'RePass',
+  name: 'AppNickNameInputForm',
   components: {
-    AppForgotPassportForm: _components_forms_AppForgotPasswordForm__WEBPACK_IMPORTED_MODULE_0__.default
+    AppForm: _forms_AppForm__WEBPACK_IMPORTED_MODULE_0__.default
+  },
+  data: function data() {
+    return {
+      values: {
+        name: null,
+        checkbox: null
+      }
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main-page.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main-page.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _components_forms_AppNickNameInputForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/forms/AppNickNameInputForm */ "./resources/components/forms/AppNickNameInputForm.vue");
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'LotrMain',
+  components: {
+    AppNickNameInputForm: _components_forms_AppNickNameInputForm__WEBPACK_IMPORTED_MODULE_0__.default
   }
 });
 
@@ -1124,45 +1121,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./resources/components/forms/AppForgotPasswordForm.vue":
-/*!**************************************************************!*\
-  !*** ./resources/components/forms/AppForgotPasswordForm.vue ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _AppForgotPasswordForm_vue_vue_type_template_id_30bf5002___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppForgotPasswordForm.vue?vue&type=template&id=30bf5002& */ "./resources/components/forms/AppForgotPasswordForm.vue?vue&type=template&id=30bf5002&");
-/* harmony import */ var _AppForgotPasswordForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppForgotPasswordForm.vue?vue&type=script&lang=js& */ "./resources/components/forms/AppForgotPasswordForm.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _AppForgotPasswordForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _AppForgotPasswordForm_vue_vue_type_template_id_30bf5002___WEBPACK_IMPORTED_MODULE_0__.render,
-  _AppForgotPasswordForm_vue_vue_type_template_id_30bf5002___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/components/forms/AppForgotPasswordForm.vue"
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
-
-/***/ }),
-
 /***/ "./resources/components/forms/AppForm.vue":
 /*!************************************************!*\
   !*** ./resources/components/forms/AppForm.vue ***!
@@ -1204,10 +1162,10 @@ component.options.__file = "resources/components/forms/AppForm.vue"
 
 /***/ }),
 
-/***/ "./resources/pages/forgot-password.vue":
-/*!*********************************************!*\
-  !*** ./resources/pages/forgot-password.vue ***!
-  \*********************************************/
+/***/ "./resources/components/forms/AppNickNameInputForm.vue":
+/*!*************************************************************!*\
+  !*** ./resources/components/forms/AppNickNameInputForm.vue ***!
+  \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1215,9 +1173,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _forgot_password_vue_vue_type_template_id_0d8ac832_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./forgot-password.vue?vue&type=template&id=0d8ac832&scoped=true&class=form& */ "./resources/pages/forgot-password.vue?vue&type=template&id=0d8ac832&scoped=true&class=form&");
-/* harmony import */ var _forgot_password_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./forgot-password.vue?vue&type=script&lang=js& */ "./resources/pages/forgot-password.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppNickNameInputForm.vue?vue&type=template&id=059d66b0& */ "./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0&");
+/* harmony import */ var _AppNickNameInputForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppNickNameInputForm.vue?vue&type=script&lang=js& */ "./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -1226,27 +1184,27 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _forgot_password_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _forgot_password_vue_vue_type_template_id_0d8ac832_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__.render,
-  _forgot_password_vue_vue_type_template_id_0d8ac832_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _AppNickNameInputForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__.render,
+  _AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
-  "0d8ac832",
+  null,
   null
   
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/pages/forgot-password.vue"
+component.options.__file = "resources/components/forms/AppNickNameInputForm.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/components/forms/AppForgotPasswordForm.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************!*\
-  !*** ./resources/components/forms/AppForgotPasswordForm.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************/
+/***/ "./resources/pages/lotr/lotr-main-page.vue":
+/*!*************************************************!*\
+  !*** ./resources/pages/lotr/lotr-main-page.vue ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1254,8 +1212,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForgotPasswordForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppForgotPasswordForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForgotPasswordForm.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForgotPasswordForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _lotr_main_page_vue_vue_type_template_id_20beca5c_class_main___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lotr-main-page.vue?vue&type=template&id=20beca5c&class=main& */ "./resources/pages/lotr/lotr-main-page.vue?vue&type=template&id=20beca5c&class=main&");
+/* harmony import */ var _lotr_main_page_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lotr-main-page.vue?vue&type=script&lang=js& */ "./resources/pages/lotr/lotr-main-page.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _lotr_main_page_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _lotr_main_page_vue_vue_type_template_id_20beca5c_class_main___WEBPACK_IMPORTED_MODULE_0__.render,
+  _lotr_main_page_vue_vue_type_template_id_20beca5c_class_main___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/pages/lotr/lotr-main-page.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
@@ -1275,10 +1256,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/pages/forgot-password.vue?vue&type=script&lang=js&":
-/*!**********************************************************************!*\
-  !*** ./resources/pages/forgot-password.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************/
+/***/ "./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1286,8 +1267,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_forgot_password_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./forgot-password.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/forgot-password.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_forgot_password_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppNickNameInputForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppNickNameInputForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppNickNameInputForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/pages/lotr/lotr-main-page.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/pages/lotr/lotr-main-page.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_lotr_main_page_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./lotr-main-page.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main-page.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_lotr_main_page_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -1300,23 +1297,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForm_vue_vue_type_style_index_0_id_33820104_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&");
-
-
-/***/ }),
-
-/***/ "./resources/components/forms/AppForgotPasswordForm.vue?vue&type=template&id=30bf5002&":
-/*!*********************************************************************************************!*\
-  !*** ./resources/components/forms/AppForgotPasswordForm.vue?vue&type=template&id=30bf5002& ***!
-  \*********************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForgotPasswordForm_vue_vue_type_template_id_30bf5002___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForgotPasswordForm_vue_vue_type_template_id_30bf5002___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
-/* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForgotPasswordForm_vue_vue_type_template_id_30bf5002___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppForgotPasswordForm.vue?vue&type=template&id=30bf5002& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForgotPasswordForm.vue?vue&type=template&id=30bf5002&");
 
 
 /***/ }),
@@ -1338,112 +1318,36 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/pages/forgot-password.vue?vue&type=template&id=0d8ac832&scoped=true&class=form&":
-/*!***************************************************************************************************!*\
-  !*** ./resources/pages/forgot-password.vue?vue&type=template&id=0d8ac832&scoped=true&class=form& ***!
-  \***************************************************************************************************/
+/***/ "./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0&":
+/*!********************************************************************************************!*\
+  !*** ./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0& ***!
+  \********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_forgot_password_vue_vue_type_template_id_0d8ac832_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_forgot_password_vue_vue_type_template_id_0d8ac832_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_forgot_password_vue_vue_type_template_id_0d8ac832_scoped_true_class_form___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./forgot-password.vue?vue&type=template&id=0d8ac832&scoped=true&class=form& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/forgot-password.vue?vue&type=template&id=0d8ac832&scoped=true&class=form&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppNickNameInputForm_vue_vue_type_template_id_059d66b0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppNickNameInputForm.vue?vue&type=template&id=059d66b0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0&");
 
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForgotPasswordForm.vue?vue&type=template&id=30bf5002&":
-/*!************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForgotPasswordForm.vue?vue&type=template&id=30bf5002& ***!
-  \************************************************************************************************************************************************************************************************************************************/
+/***/ "./resources/pages/lotr/lotr-main-page.vue?vue&type=template&id=20beca5c&class=main&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/pages/lotr/lotr-main-page.vue?vue&type=template&id=20beca5c&class=main& ***!
+  \*******************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* binding */ render),
-/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_lotr_main_page_vue_vue_type_template_id_20beca5c_class_main___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_lotr_main_page_vue_vue_type_template_id_20beca5c_class_main___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("app-form", {
-    attrs: {
-      url: "/api/auth/",
-      width: "400",
-      values: _vm.values,
-      "submit-text": "Отправить письмо"
-    },
-    scopedSlots: _vm._u([
-      {
-        key: "header",
-        fn: function() {
-          return [_c("div", [_vm._v("Восстановление пароля")])]
-        },
-        proxy: true
-      },
-      {
-        key: "fields",
-        fn: function(ref) {
-          var rules = ref.rules
-          return [
-            _c("v-text-field", {
-              attrs: {
-                rules: [rules.required, rules.email],
-                outlined: "",
-                label: "E-mail"
-              },
-              model: {
-                value: _vm.values.email,
-                callback: function($$v) {
-                  _vm.$set(_vm.values, "email", $$v)
-                },
-                expression: "values.email"
-              }
-            })
-          ]
-        }
-      },
-      {
-        key: "footer",
-        fn: function() {
-          return [
-            _c(
-              "section",
-              { staticClass: "list-mb-4" },
-              [
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "text-decoration-none",
-                    attrs: { to: "/authorization" }
-                  },
-                  [
-                    _c(
-                      "v-btn",
-                      { attrs: { color: "primary", text: "", block: "" } },
-                      [_vm._v("\n                    Войти\n                ")]
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ]
-        },
-        proxy: true
-      }
-    ])
-  })
-}
-var staticRenderFns = []
-render._withStripped = true
-
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_lotr_main_page_vue_vue_type_template_id_20beca5c_class_main___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./lotr-main-page.vue?vue&type=template&id=20beca5c&class=main& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main-page.vue?vue&type=template&id=20beca5c&class=main&");
 
 
 /***/ }),
@@ -1543,10 +1447,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/forgot-password.vue?vue&type=template&id=0d8ac832&scoped=true&class=form&":
-/*!******************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/forgot-password.vue?vue&type=template&id=0d8ac832&scoped=true&class=form& ***!
-  \******************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0&":
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppNickNameInputForm.vue?vue&type=template&id=059d66b0& ***!
+  \***********************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1559,7 +1463,93 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("app-forgot-passport-form")
+  return _c("app-form", {
+    attrs: {
+      url: "/api/auth/",
+      width: "400",
+      values: _vm.values,
+      "submit-text": "Сохранить"
+    },
+    scopedSlots: _vm._u([
+      {
+        key: "header",
+        fn: function() {
+          return [_c("div", [_vm._v("Введите Никнейм")])]
+        },
+        proxy: true
+      },
+      {
+        key: "fields",
+        fn: function(ref) {
+          var rules = ref.rules
+          return [
+            _c("v-text-field", {
+              attrs: {
+                rules: [rules.required, rules.name],
+                outlined: "",
+                label: "Никнейм"
+              },
+              model: {
+                value: _vm.values.name,
+                callback: function($$v) {
+                  _vm.$set(_vm.values, "name", $$v)
+                },
+                expression: "values.name"
+              }
+            }),
+            _vm._v(" "),
+            _c("v-checkbox", {
+              staticClass: "mt-0 mb-4",
+              attrs: {
+                rules: [rules.privacy],
+                outlined: "",
+                label:
+                  "Я понимаю, что этот никнейм нельзя будет изменить бесплатно.",
+                type: "checkbox"
+              },
+              model: {
+                value: _vm.values.checkbox,
+                callback: function($$v) {
+                  _vm.$set(_vm.values, "checkbox", $$v)
+                },
+                expression: "values.checkbox"
+              }
+            })
+          ]
+        }
+      }
+    ])
+  })
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main-page.vue?vue&type=template&id=20beca5c&class=main&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/pages/lotr/lotr-main-page.vue?vue&type=template&id=20beca5c&class=main& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-card",
+    { staticClass: "ma-auto", attrs: { rounded: "", width: "500px" } },
+    [_c("app-nick-name-input-form")],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

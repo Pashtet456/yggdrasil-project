@@ -1,6 +1,5 @@
 <template>
     <v-app>
-        <link rel="stylesheet" href="~/main.scss">
         <yggdrasil-header></yggdrasil-header>
         <yggdrasil-main class="main"></yggdrasil-main>
         <yggdrasil-footer></yggdrasil-footer>
@@ -32,6 +31,7 @@
     .main {
         background-image: url("../../assets/img/yggdrasilMainBg.webp");
         background-size: cover;
+        background-attachment: fixed;
     }
     .theme--dark {
 

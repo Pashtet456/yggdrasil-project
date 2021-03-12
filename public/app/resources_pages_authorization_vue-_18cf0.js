@@ -68,6 +68,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'AppAuthForm',
@@ -80,8 +82,23 @@ __webpack_require__.r(__webpack_exports__);
         email: null,
         password: null,
         isShowPass: false
-      }
+      },
+      success: {}
     };
+  },
+  watch: {
+    success: function success(val) {
+      var _val$data = val.data,
+          type = _val$data.type,
+          message = _val$data.message;
+      var status = val.status;
+      this.$store.commit('ui/showDialog', {
+        type: type,
+        message: message,
+        status: status
+      });
+      return val;
+    }
   }
 });
 
@@ -107,6 +124,7 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
 //
 //
 //
@@ -256,18 +274,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _this.$emit('update:loading', _this.loading = true);
 
                 _context.next = 7;
-                return _this.$http.get(_this.url);
+                return axios.get(_this.url);
 
               case 7:
                 result = _context.sent;
 
-                _this.$emit('success', result);
+                _this.$emit('update:success', result);
 
-                _context.next = 15;
+                console.log(result);
+                _context.next = 16;
                 break;
 
-              case 11:
-                _context.prev = 11;
+              case 12:
+                _context.prev = 12;
                 _context.t0 = _context["catch"](0);
 
                 if (!(_context.t0 instanceof _lib_classes_error__WEBPACK_IMPORTED_MODULE_1__.UserError)) {
@@ -276,19 +295,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                 _this.$emit('update:error', _context.t0);
 
-              case 15:
-                _context.prev = 15;
+              case 16:
+                _context.prev = 16;
                 setTimeout(function () {
                   _this.$emit('update:loading', _this.loading = false);
                 }, 500);
-                return _context.finish(15);
+                return _context.finish(16);
 
-              case 18:
+              case 19:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 11, 15, 18]]);
+        }, _callee, null, [[0, 12, 16, 19]]);
       })), 0);
     },
     reload: function reload() {
@@ -328,268 +347,27 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/lib/classes/error.js":
-/*!****************************************!*\
-  !*** ./resources/lib/classes/error.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "UserError": () => (/* binding */ UserError),
-/* harmony export */   "SystemError": () => (/* binding */ SystemError),
-/* harmony export */   "RequestError": () => (/* binding */ RequestError),
-/* harmony export */   "ValidationError": () => (/* binding */ ValidationError),
-/* harmony export */   "InvalidValueError": () => (/* binding */ InvalidValueError),
-/* harmony export */   "InvalidTypeError": () => (/* binding */ InvalidTypeError),
-/* harmony export */   "FieldRequiredError": () => (/* binding */ FieldRequiredError),
-/* harmony export */   "FieldInvalidTypeError": () => (/* binding */ FieldInvalidTypeError),
-/* harmony export */   "ApiResponseError": () => (/* binding */ ApiResponseError)
-/* harmony export */ });
-/* harmony import */ var _constants_error__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants/error */ "./resources/lib/constants/error.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _wrapNativeSuper(Class) { var _cache = typeof Map === "function" ? new Map() : undefined; _wrapNativeSuper = function _wrapNativeSuper(Class) { if (Class === null || !_isNativeFunction(Class)) return Class; if (typeof Class !== "function") { throw new TypeError("Super expression must either be null or a function"); } if (typeof _cache !== "undefined") { if (_cache.has(Class)) return _cache.get(Class); _cache.set(Class, Wrapper); } function Wrapper() { return _construct(Class, arguments, _getPrototypeOf(this).constructor); } Wrapper.prototype = Object.create(Class.prototype, { constructor: { value: Wrapper, enumerable: false, writable: true, configurable: true } }); return _setPrototypeOf(Wrapper, Class); }; return _wrapNativeSuper(Class); }
-
-function _construct(Parent, args, Class) { if (_isNativeReflectConstruct()) { _construct = Reflect.construct; } else { _construct = function _construct(Parent, args, Class) { var a = [null]; a.push.apply(a, args); var Constructor = Function.bind.apply(Parent, a); var instance = new Constructor(); if (Class) _setPrototypeOf(instance, Class.prototype); return instance; }; } return _construct.apply(null, arguments); }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _isNativeFunction(fn) { return Function.toString.call(fn).indexOf("[native code]") !== -1; }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
-/**
- * Базовый класс ошибки
- */
-
-var LegacyError = /*#__PURE__*/function (_Error) {
-  _inherits(LegacyError, _Error);
-
-  var _super = _createSuper(LegacyError);
-
-  function LegacyError(message) {
-    var _this;
-
-    _classCallCheck(this, LegacyError);
-
-    _this = _super.call(this, message);
-    _this.name = _this.constructor.name;
-    return _this;
-  }
-
-  return LegacyError;
-}( /*#__PURE__*/_wrapNativeSuper(Error));
-/**
- * Класс пользовательских ошибок
- */
-
-
-var UserError = /*#__PURE__*/function (_LegacyError) {
-  _inherits(UserError, _LegacyError);
-
-  var _super2 = _createSuper(UserError);
-
-  function UserError(message) {
-    var _this2;
-
-    _classCallCheck(this, UserError);
-
-    _this2 = _super2.call(this, message);
-    _this2.errorCode = _constants_error__WEBPACK_IMPORTED_MODULE_0__.USER_ERROR;
-    return _this2;
-  }
-
-  return UserError;
-}(LegacyError);
-/**
- * Класс системных ошибок
- *
- * Включает в сообщение название класса.
- */
-
-var SystemError = /*#__PURE__*/function (_LegacyError2) {
-  _inherits(SystemError, _LegacyError2);
-
-  var _super3 = _createSuper(SystemError);
-
-  function SystemError(message) {
-    var _this3;
-
-    _classCallCheck(this, SystemError);
-
-    _this3 = _super3.call(this, message);
-    _this3.errorCode = _constants_error__WEBPACK_IMPORTED_MODULE_0__.SYSTEM_ERROR;
-    _this3.message = "".concat(_this3.name, ": ").concat(_this3.message);
-    return _this3;
-  }
-
-  return SystemError;
-}(LegacyError);
-/**
- * Класс ошибок сетевых запросов
- */
-
-var RequestError = /*#__PURE__*/function (_SystemError) {
-  _inherits(RequestError, _SystemError);
-
-  var _super4 = _createSuper(RequestError);
-
-  function RequestError(message) {
-    var _this4;
-
-    var statusCode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 400;
-
-    _classCallCheck(this, RequestError);
-
-    _this4 = _super4.call(this, message);
-    _this4.statusCode = statusCode;
-    return _this4;
-  }
-
-  return RequestError;
-}(SystemError);
-/**
- * Базовый класс ошибок валидации
- */
-
-var ValidationError = /*#__PURE__*/function (_SystemError2) {
-  _inherits(ValidationError, _SystemError2);
-
-  var _super5 = _createSuper(ValidationError);
-
-  function ValidationError() {
-    _classCallCheck(this, ValidationError);
-
-    return _super5.apply(this, arguments);
-  }
-
-  return ValidationError;
-}(SystemError);
-/**
- * Уточняющий класс ошибок: некорректное значение
- */
-
-var InvalidValueError = /*#__PURE__*/function (_ValidationError) {
-  _inherits(InvalidValueError, _ValidationError);
-
-  var _super6 = _createSuper(InvalidValueError);
-
-  function InvalidValueError() {
-    _classCallCheck(this, InvalidValueError);
-
-    return _super6.apply(this, arguments);
-  }
-
-  return InvalidValueError;
-}(ValidationError);
-/**
- * Уточняющий класс ошибок: некорректный тип
- */
-
-var InvalidTypeError = /*#__PURE__*/function (_ValidationError2) {
-  _inherits(InvalidTypeError, _ValidationError2);
-
-  var _super7 = _createSuper(InvalidTypeError);
-
-  function InvalidTypeError() {
-    _classCallCheck(this, InvalidTypeError);
-
-    return _super7.apply(this, arguments);
-  }
-
-  return InvalidTypeError;
-}(ValidationError);
-/**
- * Уточняющий класс ошибок: некорректное значение свойства объекта
- */
-
-var FieldRequiredError = /*#__PURE__*/function (_ValidationError3) {
-  _inherits(FieldRequiredError, _ValidationError3);
-
-  var _super8 = _createSuper(FieldRequiredError);
-
-  function FieldRequiredError() {
-    _classCallCheck(this, FieldRequiredError);
-
-    return _super8.apply(this, arguments);
-  }
-
-  return FieldRequiredError;
-}(ValidationError);
-/**
- * Уточняющий класс ошибок: некорректный тип свойства объекта
- */
-
-var FieldInvalidTypeError = /*#__PURE__*/function (_ValidationError4) {
-  _inherits(FieldInvalidTypeError, _ValidationError4);
-
-  var _super9 = _createSuper(FieldInvalidTypeError);
-
-  function FieldInvalidTypeError() {
-    _classCallCheck(this, FieldInvalidTypeError);
-
-    return _super9.apply(this, arguments);
-  }
-
-  return FieldInvalidTypeError;
-}(ValidationError);
-/**
- * Класс ошибок ответа API
- */
-
-var ApiResponseError = /*#__PURE__*/function (_LegacyError3) {
-  _inherits(ApiResponseError, _LegacyError3);
-
-  var _super10 = _createSuper(ApiResponseError);
-
-  function ApiResponseError() {
-    _classCallCheck(this, ApiResponseError);
-
-    return _super10.apply(this, arguments);
-  }
-
-  return ApiResponseError;
-}(LegacyError);
-
-/***/ }),
-
-/***/ "./resources/lib/constants/error.js":
-/*!******************************************!*\
-  !*** ./resources/lib/constants/error.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "NO_ERROR": () => (/* binding */ NO_ERROR),
-/* harmony export */   "SYSTEM_ERROR": () => (/* binding */ SYSTEM_ERROR),
-/* harmony export */   "USER_ERROR": () => (/* binding */ USER_ERROR),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-var NO_ERROR = 0;
-var SYSTEM_ERROR = 1;
-var USER_ERROR = 2;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  NO_ERROR: NO_ERROR,
-  USER_ERROR: USER_ERROR,
-  SYSTEM_ERROR: SYSTEM_ERROR
-});
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".app-form[data-v-33820104] {\n  width: 400px;\n  margin: auto;\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
 
 /***/ }),
 
@@ -1351,6 +1129,36 @@ try {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForm_vue_vue_type_style_index_0_id_33820104_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForm_vue_vue_type_style_index_0_id_33820104_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__.default, options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForm_vue_vue_type_style_index_0_id_33820104_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+
+/***/ }),
+
 /***/ "./resources/components/forms/AppAuthForm.vue":
 /*!****************************************************!*\
   !*** ./resources/components/forms/AppAuthForm.vue ***!
@@ -1403,15 +1211,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _AppForm_vue_vue_type_template_id_33820104_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppForm.vue?vue&type=template&id=33820104&scoped=true& */ "./resources/components/forms/AppForm.vue?vue&type=template&id=33820104&scoped=true&");
 /* harmony import */ var _AppForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppForm.vue?vue&type=script&lang=js& */ "./resources/components/forms/AppForm.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _AppForm_vue_vue_type_style_index_0_id_33820104_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& */ "./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
+;
 
 
 /* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__.default)(
   _AppForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
   _AppForm_vue_vue_type_template_id_33820104_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
   _AppForm_vue_vue_type_template_id_33820104_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
@@ -1516,6 +1326,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& ***!
+  \**********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppForm_vue_vue_type_style_index_0_id_33820104_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/components/forms/AppForm.vue?vue&type=style&index=0&id=33820104&lang=scss&scoped=true&");
+
+
+/***/ }),
+
 /***/ "./resources/components/forms/AppAuthForm.vue?vue&type=template&id=512c06cc&":
 /*!***********************************************************************************!*\
   !*** ./resources/components/forms/AppAuthForm.vue?vue&type=template&id=512c06cc& ***!
@@ -1585,11 +1408,16 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("app-form", {
     attrs: {
-      url: "/api/auth/",
-      width: "400",
+      url: "/api/hello",
       "privacy-check": "",
       values: _vm.values,
-      "submit-text": "Войти"
+      "submit-text": "Войти",
+      success: _vm.success
+    },
+    on: {
+      "update:success": function($event) {
+        _vm.success = $event
+      }
     },
     scopedSlots: _vm._u([
       {
@@ -1690,6 +1518,11 @@ var render = function() {
                           "\n                    Зарегистрироваться\n                "
                         )
                       ]
+                    ),
+                    _vm._v(
+                      "\n                " +
+                        _vm._s(_vm.success.data) +
+                        "\n            "
                     )
                   ],
                   1
@@ -1731,6 +1564,7 @@ var render = function() {
     "v-form",
     {
       ref: "form",
+      staticClass: "app-form",
       on: {
         submit: function($event) {
           $event.preventDefault()
