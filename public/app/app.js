@@ -2874,6 +2874,15 @@ var routes = [{
     title: 'Донат'
   }
 }, {
+  path: '/stepper',
+  name: 'YggdrasilStepper',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_pages_yggdrasil_yggdrasil-stepper_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../pages/yggdrasil/yggdrasil-stepper */ "./resources/pages/yggdrasil/yggdrasil-stepper.vue"));
+  },
+  meta: {
+    title: 'Шаги'
+  }
+}, {
   path: '/authorization',
   name: 'Authorization',
   component: function component() {
@@ -67096,7 +67105,7 @@ var index = {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_pages_yggdrasil_yggdrasil-main-page_vue":1,"resources_pages_yggdrasil_yggdrasil-rules-page_vue":1,"resources_pages_yggdrasil_yggdrasil-donate-page_vue":1,"resources_pages_authorization_vue":1,"resources_pages_registration_vue":1,"resources_pages_forgot-password_vue":1,"resources_pages_cabinet_vue":1}[chunkId]) return "app/" + chunkId + ".js";
+/******/ 			if ({"resources_pages_yggdrasil_yggdrasil-main-page_vue":1,"resources_pages_yggdrasil_yggdrasil-rules-page_vue":1,"resources_pages_yggdrasil_yggdrasil-donate-page_vue":1,"resources_pages_yggdrasil_yggdrasil-stepper_vue":1,"resources_pages_authorization_vue":1,"resources_pages_registration_vue":1,"resources_pages_forgot-password_vue":1,"resources_pages_cabinet_vue":1}[chunkId]) return "app/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

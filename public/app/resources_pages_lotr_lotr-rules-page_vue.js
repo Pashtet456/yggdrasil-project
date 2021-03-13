@@ -77,6 +77,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'AppRules'
 });
@@ -347,7 +348,9 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("br"),
-      _vm._v("0.2. Запрещены 0. Правила поведения на сайте и в сообществах\n"),
+      _vm._v("Запрещены\n        "),
+      _c("br"),
+      _vm._v("0. Правила поведения на сайте и в сообществах\n"),
       _c("br"),
       _vm._v(" "),
       _c("br"),

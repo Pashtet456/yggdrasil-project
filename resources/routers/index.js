@@ -23,6 +23,12 @@ const routes = [
         meta: { title:'Донат' },
     },
     {
+        path: '/stepper',
+        name: 'YggdrasilStepper',
+        component: () => import( '../pages/yggdrasil/yggdrasil-stepper' ),
+        meta: { title:'Шаги' },
+    },
+    {
         path: '/authorization',
         name: 'Authorization',
         component: () => import( '../pages/authorization' ),

@@ -1,6 +1,45 @@
 <template class="main">
-    <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad, amet aperiam asperiores, consequatur corporis, dolore et in ipsam laborum minima non officia quis rerum saepe sed ullam ut velit voluptatem voluptates. Autem cumque deserunt dicta dolore doloribus earum eius error excepturi ipsa itaque laboriosam, magnam maiores molestiae natus nihil nulla numquam provident quo, quos rerum sequi sint tempora temporibus veniam, voluptatibus? Atque beatae corporis deserunt dicta dignissimos doloremque doloribus eaque, fugit, labore maxime modi nobis nostrum perspiciatis porro quisquam reiciendis similique sit tempore tenetur voluptatum! Commodi dicta, dignissimos doloribus, eaque, eveniet ex hic ipsum porro quia rem sapiente tempore?
+    <div class="ml-16 mr-16 text-center">
+        <div>
+            Приветственный текст Lorem ipsum dolor sit amet, consectetur adi
+            pisicing elit. Animi culpa eos inventore laborum quas suscipit? Dolorem ex iure magnam porro quas quis. A
+            ccusantium alias architecto assumenda, aut dolor earum fugiat, iusto, laboriosam nemo quia tempora veritatis.
+            Corporis deleniti est ipsum iusto molestias, non possimus quaerat recusandae sapiente sint ut voluptatibus.
+        </div>
+        <router-link to="/stepper">
+            <v-btn class="ma-10">
+                Начни играть
+            </v-btn>
+        </router-link>
+        <div class="d-flex flex-wrap justify-content-center align-center cards text-center">
+            <v-card width="200px" class="ma-4 pa-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, maxime.
+            </v-card>
+            <v-card width="200px" class="ma-4 pa-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, maxime.
+            </v-card>
+            <v-card width="200px" class="ma-4 pa-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, maxime.
+            </v-card>
+            <v-card width="200px" class="ma-4 pa-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, maxime.
+            </v-card>
+            <v-card width="200px" class="ma-4 pa-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, maxime.
+            </v-card>
+            <v-card width="200px" class="ma-4 pa-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, maxime.
+            </v-card>
+            <v-card width="200px" class="ma-4 pa-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, maxime.
+            </v-card>
+            <v-card width="200px" class="ma-4 pa-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, maxime.
+            </v-card>
+            <v-card width="200px" class="ma-4 pa-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, maxime.
+            </v-card>
+        </div>
     </div>
 </template>
 
@@ -12,5 +51,8 @@
 
 
 <style lang="scss" scoped>
-
+.stepper {
+    width: 900px;
+}
+    .cards {justify-content: center}
 </style>
